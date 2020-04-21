@@ -1,0 +1,28 @@
+@font-face {
+  font-family: BeirutText-Regular;
+  src: url(../../../assets/fonts/GT-Walsheim-Regular.otf);
+}
+@font-face {
+  font-family: BeirutText-Medium;
+  src: url(../../../assets/fonts/GT-Walsheim-Medium.otf);
+}
+@font-face {
+  font-family: BeirutText-Book;
+  src: url(../../../assets/fonts/BeirutText-Book.otf);
+}
+
+
+
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    padding: 2px 8px;
+}
+.h{
+    font-family: BeirutText-Medium;
+}
+.p{
+    font-family: BeirutText-Regular;
+    
+}

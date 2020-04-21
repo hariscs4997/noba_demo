@@ -1,0 +1,26 @@
+<ul class="overlay" [@slideInOut]="menuState">
+    <img class="o-top-small" (click)="toggleOut()" src="../../../assets/images/o-top-small.svg"/>
+    <img class="o-bottom-small" [ngClass] = "position" (click)="toggleOut()" src="../../../assets/images/o-bottom-small.svg"/>
+    <div class="overlay-content">
+      <li><a id="home" routerLink = "{{nav.home}}"> Home </a></li>
+      <li><a id="noba" routerLink = "{{nav.what_is_noba}}"> What is Noba </a></li>
+      <li><a id="world" routerLink = "{{nav.home}}" [fragment]="'worldtarget'"> Our World </a></li>
+      <li><a id="login" routerLink = "{{nav.business_login}}"> Business Login </a></li>
+      <li><a id="partner" routerLink = "{{nav.home}}" [fragment]="'partnertarget'"> Partner with Us </a></li>
+    </div>
+  </ul>
+<div class="header">
+    <nav class="navbar">
+      <div class="text-left">
+        <a class="fadeInDown animated" routerLink="{{nav.home}}">For People</a>
+        <a class="fadeInDown animated" routerLink="{{nav.business}}">For Business</a>
+        <a class="fadeInDown animated" routerLink="{{nav.business_login}}">Business Login</a>
+      </div>
+      <div class="text-right fadeInDown animated">
+        <a class="logo" (click)="toggleIn()"><img class="fadeInDown animated" src="../../../assets/images/logo-orange.svg"
+            alt="logo" /></a>
+        <!-- <mat-icon (click)="toggleOut()"><img src="../../../assets/images/logo.svg" alt="logo"/></mat-icon> -->
+        <!-- <a class="logo" onclick="openNav()"><img src="../../../assets/images/logo.svg" alt="logo"/></a> -->
+      </div>
+    </nav>
+  </div>

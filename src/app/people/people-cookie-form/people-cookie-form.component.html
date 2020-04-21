@@ -1,0 +1,104 @@
+<app-header [nav] = "nav"></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="h">Customise Your Cookies</h1>
+            <p class="p">When using our website, you can improve the performance and your experience by allowing us 
+                to store and retrieve information on your internet browser. This information can include 
+                customised settings you have selected on the site, information about you and your device, 
+                and your preferences. If you want to read more or update your settings later, you can 
+                access our cookie policies:</p>
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="h"><b>Preferences</b><br>
+                        <p class="p">Preference cookies are set when you make preference changes on the site and 
+                            allow for your changes to be saved for a better experience. If you don’t opt-in 
+                            to these cookies when you use the site, it will behave as if it is your first time
+                            visiting our site every time you use it.</p>
+                    </td>
+                    <td>
+                        <div class="switch h">
+                          <div class="check">
+                            <input type="radio" name="choice" id="yes" checked>
+                            <label for="yes">Yes</label>
+                          </div>
+                          <div class="check">
+                            <input type="radio" name="choice" id="no">
+                            <label for="no">No</label>
+                            <span class="switchFilter"></span>
+                          </div>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h"><b>Analytics</b><br>
+                        <p class="p">Analytics cookies help us offer you a better user experience, allowing us to count visits 
+                            and determine where users such as yourself are coming from. These cookies help us make 
+                            choices of how we improve the performance of our website when we make changes and updates. 
+                            If you don’t opt-in, it becomes more difficult to identify performance enhancements.</p>
+                    </td>
+                    <td>
+                        <div class="switch h">	
+                          <div class="check">
+                            <input type="radio" name="choice1" id="yes" checked>
+                            <label for="yes">Yes</label>
+                          </div>
+                          <div class="check">
+                            <input type="radio" name="choice1" id="no">
+                            <label for="no">No</label>
+                            <span class="switchFilter"></span>
+                          </div>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h"><b>Targeting</b><br>
+                        <p class="p">Targeting cookies are used by us and our partners to build a profile of our users. They are 
+                            used to provide information on how users use our products and provides a view into how a 
+                            user comes to register for those products. Our partners collect information to build a 
+                            profile based on your interests to serve more relevant ad content. If you do not opt-in to 
+                            these cookies, you will not be tracked as an individual user and will be served as an anonymous 
+                            user and see ads that are not relevant to you and your preferences.</p>
+                    </td>
+                    <td>
+                        <div class="switch h">	
+                          <div class="check">
+                            <input type="radio" name="choice2" id="yes" checked>
+                            <label for="yes">Yes</label>
+                          </div>
+                          <div class="check">
+                            <input type="radio" name="choice2" id="no">
+                            <label for="no">No</label>
+                          </div>
+                            <span class="switchFilter"></span>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h"><b>Strictly Necessary</b><br>
+                        <p class="p">Strictly necessary cookies are required for the operation of our site and cannot be turned off. 
+                            They are usually only set in response to actions you make on the website, such as selecting 
+                            privacy settings, logging into an account, or requesting services. If you manually block or 
+                            delete these cookies, sections of the site will not function properly. These cookies do not 
+                            store any personally identifiable information.</p>
+                    </td>
+                    <td class="h">
+                        <p>Required</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="col-md-12 text-center">
+               <button (click)="save_values()" class="btn btn-success">Submit</button>
+              </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,157 @@
+@font-face {
+  font-family: BeirutText-Regular;
+  src: url(../../../assets/fonts/GT-Walsheim-Regular.otf);
+}
+@font-face {
+  font-family: BeirutText-Medium;
+  src: url(../../../assets/fonts/GT-Walsheim-Medium.otf);
+}
+@font-face {
+  font-family: BeirutText-Book;
+  src: url(../../../assets/fonts/BeirutText-Book.otf);
+}
+
+
+.top{
+  margin-top: 80vh !important;
+  transition: top cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+.bottom{
+  margin-top: auto !important;
+  transition: 1s;
+}
+.no-padding{
+  padding: 0px;
+}
+.top-absolute{
+  position: absolute;
+  left: 38%;
+  right: 50%;
+  width: 120px;
+  top: 32%;
+  transition: 1s;
+}
+.log-top{
+  top: 10%;
+  transition: 1s;
+}
+
+// Side Navigation Slide
+.overlay { 
+  transform: translate3d(100%, 0, 0);
+  height: 100%;
+  width: 0;
+  position: fixed;
+  scroll-behavior: unset;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #F9FFEE;
+  overflow-x: hidden;
+  transition: 0.5s;
+  .o-top-small {
+      position: absolute;
+      top: 25px;
+      right: 34px;
+      font-size: 60px;
+      transition: 0.5s;
+  }
+  .o-bottom-small {
+      position: absolute;
+      top: 35px;
+      right: 32px;
+      font-size: 60px;
+      transition: 0.5s;
+  }
+  .overlay-content{
+      position: absolute;
+      top: 15vh;
+      width: 100%;
+      text-align: right;
+      li{
+          text-align: right;
+          list-style: none;
+          padding-right: 30px;
+          line-height: 1.3;
+          
+          a{
+              font-size: 50px;
+              font-family: 'BeirutTextWebBook';
+              margin-right: 60px;
+              font-family: BeirutText-Book;
+              text-decoration: none;
+          }
+          #home{
+              color: #086262;
+          }
+          #noba{
+              color: #FF7757;
+          }
+          #world{
+              color: #5F8143;
+          }
+          #app{
+              color: #368E75;
+          }
+          #login{
+              color: #086262;
+          }
+          #partner{
+              color: #5C7DBC;
+          }
+      }
+  }
+}
+
+// Navigation Bar
+.header{
+  background-color: #086262;
+  padding: 6px 30px 6px 0px;
+  // position: absolute;
+  z-index: 1;
+  width: 100%;
+  a{
+      font-family: BeirutText-Medium;
+      padding: 14px 16px;
+      color: #FFFF96;
+      font-size: 17px;
+  }
+  .logo{
+      width: 30px;
+  }
+}
+
+.noba{
+    background-image: url('../../../assets/images/Noba-O.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+	display: flex;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+        
+    /* Set up positioning */
+    // position: fixed;
+    top: 0;
+    left: 0;
+    }
+ul{
+    list-style-type: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    li{
+      color: #086060;
+      font-size: 18px;
+      div{
+        font-weight: 600;
+      }
+    }
+}
+.noba-detail{
+  font-family: BeirutText-Book;
+    margin-top: 30px;
+}

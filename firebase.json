@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "noba",
+      "public": "dist/noba",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
