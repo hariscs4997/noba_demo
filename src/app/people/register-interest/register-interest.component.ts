@@ -40,6 +40,8 @@ export class RegisterInterestComponent implements OnInit {
     Lastname        : new FormControl('',[Validators.required]),
     email        : new FormControl('',[Validators.required,Validators.email,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
     Phone        : new FormControl('',[Validators.required]),
+    interest_people       : new FormControl(''),
+    interest_business       : new FormControl(''),
     help        : new FormControl('',[Validators.required]),
     country        : new FormControl('',[Validators.required])
   });
