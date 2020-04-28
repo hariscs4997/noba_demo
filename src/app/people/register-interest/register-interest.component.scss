@@ -10,16 +10,7 @@
     font-family: BeirutText-Book;
     src: url(../../../assets/fonts/BeirutText-Book.otf);
   }
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-      /* display: none; <- Crashes Chrome on hover */
-      -webkit-appearance: none;
-      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-  }
   
-  input[type=number] {
-      -moz-appearance:textfield; /* Firefox */
-  }
 .top-absolute{
     position: absolute;
     left: 38%;

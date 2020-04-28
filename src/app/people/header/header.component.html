@@ -3,7 +3,7 @@
   <img class="o-top-small" (click)="toggleOut()" src="../../../assets/images/o-top-small.svg" />
   <img class="o-bottom-small" [ngClass] = "position" (click)="toggleOut()" src="../../../assets/images/o-bottom-small.svg" />
   <div class="overlay-content">
-    <li><a id="home" routerLink = "{{nav.home}}"> Home </a></li>
+    <li><a id="home" routerLink = "{{nav.home}}"> <span>For</span> Home </a></li>
     <li><a id="noba" routerLink = "{{nav.what_is_noba}}"> What is Noba </a></li>
     <li><a id="world" routerLink = "/" [fragment]="'worldtarget'" (click) = "toggleOut()"> Our World </a></li>
     <li><a id="app" routerLink = "/" [fragment]="'apptarget'"> Get the App </a></li>

@@ -49,6 +49,11 @@
                 margin-right: 60px;
                 font-family: BeirutText-Book;
                 text-decoration: none;
+                display: inline-flex;
+                span{
+                    font-size: 20px;
+                    padding: 10px;
+                }
             }
             #home{
                 color: #086262;

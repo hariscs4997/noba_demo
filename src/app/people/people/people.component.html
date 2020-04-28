@@ -1,27 +1,30 @@
-<app-header [nav] = "nav"></app-header>
+<app-header [nav]="nav"></app-header>
 
 <!-- The Modal -->
 <div class="modal" id="myModal">
-   <!-- Modal body  -->
+  <!-- Modal body  -->
   <div class="modal-body">
     <div class="cookies" role="dialog">
       <div class="container-fluid">
-          <div class="container">
-              <div class="row align-items-center">
-                  <div class="col-lg-9">
-                      <div class="cookie-left">
-                          <h3>Cookie Notice</h3>
-                          <p>This website uses cookies to enhance your experience and to help us learn how we can improve Noba for our customers. By continuing
-                              to use the website, you agree to our use of such cookies and the processing of any information. You can alter your cookie preferences
-                              <a data-dismiss="modal" routerLink="cookie-form">below</a> . <br>
-                              <a data-dismiss="modal" routerLink="Terms-and-condition">Click here</a> to read our Terms &amp; Conditions on how we use your information</p>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 text-lg-center">
-                      <div class="cookie-right"> <button (click)="cookie_value()">Accept and Close</button> </div>
-                  </div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-9">
+              <div class="cookie-left">
+                <h3>Cookie Notice</h3>
+                <p>This website uses cookies to enhance your experience and to help us learn how we can improve Noba for
+                  our customers. By continuing
+                  to use the website, you agree to our use of such cookies and the processing of any information. You
+                  can alter your cookie preferences
+                  <a data-dismiss="modal" routerLink="cookie-form">below</a> . <br>
+                  <a data-dismiss="modal" routerLink="Terms-and-condition">Click here</a> to read our Terms &amp;
+                  Conditions on how we use your information</p>
               </div>
+            </div>
+            <div class="col-lg-3 text-lg-center">
+              <div class="cookie-right"> <button (click)="cookie_value()">Accept and Close</button> </div>
+            </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
@@ -31,13 +34,16 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <img class="fadeInDown animated" src="../../../assets/images/noba.png" />
-        <img id="scroll-down" class="fadeInDown animated top-absolute" src="../../../assets/images/yellow-top-anim.png" />
-        <img id="scroll-up" class="fadeInDown animated absolute" src="../../../assets/images/yellow-bottom-anim.png" />
+        <div class="fixed">
+          <img class="fadeInDown animated" src="../../../assets/images/noba.png" />
+          <!-- <img id="scroll-up" class="fadeInDown animated absolute" src="../../../assets/images/yellow-bottom-anim.png" /> -->
+        </div>
+        <img id="scroll-down" class="fadeInDown animated top-absolute"
+          src="../../../assets/images/yellow-top-anim.png" />
       </div>
     </div>
   </div>
-    <a  class="arrow"><img src="../../../assets/images/arrow.png" />Our purpose</a>
+  <a class="arrow"><img src="../../../assets/images/arrow.png" />Our purpose</a>
 </div>
 <!-- Slider Section -->
 <div id="slide1" #target class="carousel slide" data-ride="carousel">
@@ -112,7 +118,7 @@
       <img src="../../../assets/images/5.jpg" alt="New York">
     </div>
   </div>
-  <a  class="slide-arow"><img src="../../../assets/images/arrow.png" />Our mission</a>
+  <a class="slide-arow"><img src="../../../assets/images/arrow.png" />Our mission</a>
 </div>
 <!-- parallax -->
 <div #slide class="parallax2">
@@ -145,20 +151,23 @@
       </div>
     </div>
   </div>
-  <a  class="arrow"><img src="../../../assets/images/arrow-green.png" />Our world</a>
+  <a class="arrow"><img src="../../../assets/images/arrow-green.png" />Our world</a>
 </div>
-<!-- <div id="demo2" class="parallax image-0">
+<!-- What is Noba -->
+<div id="demo2" class="parallax image-0">
   <div class="content">
     <p>What is Noba</p>
   </div>
-</div> -->
+</div> 
+
+
 <!-- Video Section -->
 <div class="video-section" #worldtarget id="worldtarget">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <video src="assets/video/PayAccessVideo.mp4" poster="../../../assets/images/art.svg"
-          class="has-media-controls-hidden">
+        <video poster="../../../assets/images/art.svg" class="has-media-controls-hidden">
+          <source src="assets/video/PayAccessVideo.mp4" type="video/mp4">
         </video>
         <h3 class="video-content">So, what does our world look like?</h3>
         <img class="video-overlay-play-button" src="../../../assets/images/play.png" alt="Play video" />
@@ -167,32 +176,35 @@
   </div>
   <a  class="arrow"><img src="../../../assets/images/arrow.png" />Latest stories</a>
 </div>
+
+
+
 <!-- Noba 3 Section -->
-<!-- <div class="wrapper">
+<div class="wrapper">
   <div class="row m-0">
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding h-400 purple">
       <div class="">
-        <img class="padding pb-3" src="../../../assets/images/connect.png" alt="Noba Connect">
+        <img class="padding" src="../../../assets/images/connect.png" alt="Noba Connect">
         <p class="padding w-100">Our Community</p>
       </div>
       <div class="bottom-right"> <a href="" class="btn btn-primary float-right b-0">Join in</a></div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding h-400 green">
       <div class="">
-        <img class="padding pb-3" src="../../../assets/images/pay.png" alt="Noba Pay">
+        <img class="padding w-auto" src="../../../assets/images/pay.png" alt="Noba Pay">
         <p class="padding w-100">Our Community</p>
       </div>
       <div class="bottom-right"> <a href="" class="btn btn-primary float-right b-0">Go</a></div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding h-400 light-green">
       <div class="">
-        <img class="padding pb-3" src="../../../assets/images/academy.png" alt="Noba Academy">
+        <img class="padding" src="../../../assets/images/academy.png" alt="Noba Academy">
         <p class="padding w-100">Our Community</p>
       </div>
       <div class="bottom-right"> <a href="" class="btn btn-primary float-right b-0">Read more</a></div>
     </div>
   </div>
-</div>
+</div> 
 
 <div class="parallax image-1">
   <div class="content">
@@ -213,7 +225,7 @@
   <div class="content">
     <p>Backing communities</p>
   </div>
-</div> -->
+</div>
 <div class="parallax image-5" #targetbetter>
   <div class="content">
     <p>Better all round</p>
@@ -267,7 +279,7 @@
         </ul>
       </div>
       <div class="col-12">
-        <div class="copyright text-center">Copyright  2017 - 2020  Noba Group Ltd</div>
+        <div class="copyright text-center">Copyright 2017 - 2020 Noba Group Ltd</div>
       </div>
     </div>
   </div>

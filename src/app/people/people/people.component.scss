@@ -16,33 +16,7 @@
 .no-padding{
     padding: 0px;
 }
-.top-absolute{
-    position: absolute;
-    left: 38%;
-    right: 50%;
-    width: 120px;
-    top: 32%;
-    transition: 1s;
-}
-.log-top{
-    top: 10%;
-    transition: 1s;
-}
-.absolute{
-    position: absolute;
-    left: 38%;
-    right: 50%;
-    width: 120px;
-    top: 54%;
-}
-.top1{
-    top: 20% !important;
-    transition: 1s;
-}
-.top2{
-    top: 5% !important;
-    transition: 1s;
-}
+
 .cookies{
     background-color: #086060;
     padding: 40px 0;
@@ -187,6 +161,7 @@
         width: 30px;
     }
 }
+
 .banner{
     background-color: #086262;
     display: flex;
@@ -194,8 +169,31 @@
     align-items: center;
     height: calc(100vh - 150px);
     position: relative;
-    img{
-        max-width: 50%;
+    .fixed{
+        position: fixed;
+        top: 50px;
+        left: 0;
+        height: 94%;
+        width: 100%;
+        
+        /* this is what centers your element in the fixed wrapper*/
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center; /* aligns on vertical for column */
+        align-items: center; /* aligns on horizontal for column */
+        img{
+            margin-top: -97px;
+            width: 400px;
+        }
+    }
+    
+    .top-absolute{
+        position: absolute;
+        top: -36px;
+        left: 460px;
+        right: 0;
+        width: 104px;
+        transition: 1s;
     }
     .arrow-down{
         
@@ -361,6 +359,7 @@
 /* parallax */
 
 .parallax2{
+    background-color: #fff;
     position: relative;
   .content{
       padding-bottom: 40px;
@@ -395,27 +394,12 @@
         } 
     }
 }
-/* Video Section*/
-.video-section{
-    position: relative;
-    background-color: #368E75;
-    height: calc(100vh - 70px);
-    padding: 30px 0px 30px 0px;
 
-    .arrow-down{
-        position: absolute;
-        margin-left: 30px;
-        width: 95%;
-        top: 70%;
-        z-index: 10;
-        img{
-            width: 20px;
-        } 
-    }
-}
-video[poster]{
-    height: calc(100vh - 100px);
-    width:100%;
+    /* Video Section*/
+
+    video[poster]{
+        height: calc(100vh - 100px);
+        width:100%;
     }
     .video-content{
         margin: 0;
@@ -441,6 +425,27 @@ video[poster]{
         cursor: pointer;
         /* background-image: linear-gradient(transparent, #000); */
         transition: opacity 150ms;
+    }
+
+    
+    .video-section{
+        // background-image: url(./../../../assets/video/video.jpg);
+        position: relative;
+        background-color: #368E75;
+        height: calc(100vh - 70px);
+        padding: 30px 0px 30px 0px;
+    
+        .arrow-down{
+            position: absolute;
+            margin-left: 30px;
+            width: 95%;
+            top: 70%;
+            z-index: 10;
+            bottom: 110px !important;
+            img{
+                width: 20px;
+            } 
+        }
     }
 
     .wrapper{
@@ -473,8 +478,7 @@ video[poster]{
             font-size: 16px;
         }
         .padding{
-            padding-left: 1.5rem;
-            padding-top: 1.5rem;
+            padding: 1.5rem;
         }
         .btn-primary {
             color: #fff!important;
@@ -486,6 +490,33 @@ video[poster]{
             line-height: 20px!important;
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* Side Navbar */
     .sidenav {
@@ -580,22 +611,28 @@ video[poster]{
       .image-0{
         background-image: url('../../../assets/images/whatNoba.jpg');
         background-position: center bottom;
+        position: relative;
       }
 
       .image-1{
           background-image: url('../../../assets/images/connected-world.jpg');
+          position: relative;
       }
       .image-2{
         background-image: url('../../../assets/images/generation.jpg');
+        position: relative;
     }
     .image-3{
         background-image: url('../../../assets/images/freeAndEasy.jpg');
+        position: relative;
     }
     .image-4{
         background-image: url('../../../assets/images/community.jpg');
+        position: relative;
     }
     .image-5{
         background-image: url('../../../assets/images/peoples.jpg');
+        position: relative;
     }
 
     .app{
@@ -603,6 +640,7 @@ video[poster]{
         background-color: #ffffa0;
         padding: 60px 0;
         text-align: center;
+        position: relative;
         h2{
             font-family: BeirutText-Book;
             margin-bottom: 40px;
@@ -673,6 +711,7 @@ video[poster]{
         background-color: #086060;
         padding: 60px 0 24px;
         color: #fff;
+        position: relative;
         .bg-blue {
             background-color: #5C7DBC;
         }
@@ -710,7 +749,27 @@ video[poster]{
         }
     }
 
-    @media screen and (min-width: 300px) and (max-width: 768px) { 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (min-width: 300px) and (max-width: 767px) { 
         
         .header{
             padding: 12px 15px 0px 0px;
@@ -722,25 +781,25 @@ video[poster]{
                 }
             }
         }
-        .banner{
-            .top-absolute {
+        .banner{ 
+            .fixed{
+                position: fixed;
+                top: 50px;
+                left: 0;
+                height: 60%;
+                width: 100%;
+                img{
+                    margin-top: 32px;
+                    width: 70%;
+                }
+            }
+            .top-absolute{
                 position: absolute;
-                left: 29%;
-                right: 50%;
-                width: 20%;
-                top: 19%;
-                -webkit-transition: 1s;
+                top: -36px;
+                left: 32%;
+                right: 0;
+                width: 57px;
                 transition: 1s;
-            }
-            img{
-                max-width: 80%;
-            }
-            .absolute {
-                position: absolute;
-                left: 29%;
-                right: 50%;
-                width: 20%;
-                top: 45%;
             }
         }
         .overlay{
@@ -841,6 +900,9 @@ video[poster]{
                 padding-bottom: 40px;
                 width: 100%;
             }
+            .icon{
+                padding: 50px 45px 50px;
+            }
             .arrow-green{
                 left: -55px;
                 font-size: 12px;
@@ -887,17 +949,22 @@ video[poster]{
             }
         }
 
+        .parallax{
+            .content{
+                width: 75%;
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+
         .footer{
             padding: 60px 27px 24px;
         }
-      }
 
+    }
 
-
-
-
-
-      @media screen and (min-width: 769px) and (max-width: 1200px) { 
+    @media screen and (min-width: 768px) and (max-width: 1023px) { 
 
         .modal{
             .modal-body{
@@ -916,28 +983,357 @@ video[poster]{
         }
 
         .banner{
-            .top-absolute {
-                position: absolute;
-                left: 29%;
-                right: 50%;
-                width: 20%;
-                top: 19%;
-                -webkit-transition: 1s;
-                transition: 1s;
+            .fixed{
+                img{
+                    margin-top: -100px;
+                }
             }
-            img{
-                max-width: 80%;
-            }
-            .absolute {
-                position: absolute;
-                left: 29%;
-                right: 50%;
-                width: 20%;
-                top: 45%;
+            .top-absolute{
+                left: 250px;
             }
         }
 
         .slider{
             height: auto;
+            .slide-content{
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .wrapper{
+            .h-400{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .parallax2{
+            .icon{
+                padding: 50px 20px 50px;
+                p{
+                    font-size: 15px;
+                }
+            }
         }
     }
+
+
+    @media screen and (min-width: 1024px) and (max-width: 1200px){
+
+        .banner{
+            .fixed{
+                img{
+                    margin-top: -105px;
+                }
+            }
+            .top-absolute{
+                left: 370px;
+            }
+        }
+
+        .parallax2{
+            .icon{
+                padding: 50px 40px 50px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1440px) and (max-width: 1600px){
+
+        .banner{
+            .fixed{
+                img{
+                    margin-top: -87px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1920px) and (max-width: 1960px){
+
+        .banner{
+            .fixed{
+                img{
+                    margin-top: -77px;
+                }
+            }
+        }
+    }
+
+
+     // iPhone 5 & 5S in portrait
+     @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait){
+
+        .banner{ 
+            .fixed{
+                position: fixed;
+                top: 50px;
+                left: 0;
+                height: 60%;
+                width: 100%;
+                img{
+                    margin-top: 51px;
+                    width: 70%;
+                }
+            }
+            .top-absolute{
+                position: absolute;
+                top: -36px;
+                left: 32%;
+                right: 0;
+                width: 57px;
+                transition: 1s;
+            }
+        }
+    }
+
+    // Iphone 6,7,8 Portrait
+    @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+        .banner{ 
+            height: calc(100vh - 210px);
+            .fixed{
+                position: fixed;
+                top: 50px;
+                left: 0;
+                height: 60%;
+                width: 100%;
+                img{
+                    margin-top: 49px;
+                    width: 70%;
+                }
+            }
+            .top-absolute{
+                position: absolute;
+                top: -36px;
+                left: 115px;
+                right: 0;
+                width: 68px;
+                transition: 1s;
+            }
+        }
+
+        .overlay{
+            .overlay-content{
+                li{
+                    line-height: 2;
+                    a{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .arrow{
+            left: -65px;
+            font-size: 12px;
+            bottom: -10px;
+            img{
+                margin-right: 20px;
+                max-width: 70px;
+            }
+        }
+    }
+
+    // Iphone 6,7,8 Landscpae
+    @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape){
+        .banner{ 
+            height: calc(100vh - 100px);
+            .fixed{
+                position: fixed;
+                top: 50px;
+                left: 0;
+                height: 60%;
+                width: 100%;
+                img{
+                    margin-top: 82px !important;
+                    width: 70%;
+                }
+            }
+            .top-absolute{
+                position: absolute;
+                top: -36px;
+                left: 142px !important;
+                right: 0;
+                width: 120px !important;
+                transition: 1s;
+            }
+        }
+
+    }
+
+    // iPhone 6, 7, & 8 Plus in portrait
+    @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait){
+
+        .banner{ 
+            height: calc(100vh - 100px);
+            .fixed{
+                position: fixed;
+                top: 50px;
+                left: 0;
+                height: 53% !important;
+                width: 100%;
+                img{
+                    margin-top: 72px !important;
+                    width: 70%;
+                }
+            }
+            .top-absolute{
+                position: absolute;
+                top: -36px;
+                left: 128px !important;
+                right: 0;
+                width: 74px !important;
+                transition: 1s;
+            }
+        }
+
+    }
+
+    // iPhone 6, 7, & 8 Plus in landscape
+    @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape){
+
+        .banner{ 
+            height: calc(100vh - 100px);
+            .fixed{
+                position: fixed;
+                top: 50px;
+                left: 0;
+                height: 57% !important;
+                width: 100%;
+                img{
+                    margin-top: 90px !important;
+                    width: 50%;
+                }
+            }
+            .top-absolute{
+                position: absolute;
+                top: -36px;
+                left: 169px !important;
+                right: 0;
+                width: 95px !important;
+                transition: 1s;
+            }
+        }
+    }
+
+    // iPhone X in portrait
+    @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait){
+        .banner{ 
+            height: calc(100vh - 268px) !important;
+            .fixed{
+                position: fixed;
+                top: 50px;
+                left: 0;
+                height: 60%;
+                width: 100%;
+                img{
+                    margin-top: 49px;
+                    width: 70%;
+                }
+            }
+            .top-absolute{
+                position: absolute;
+                top: -36px;
+                left: 115px;
+                right: 0;
+                width: 68px;
+                transition: 1s;
+            }
+        }
+    }
+
+    // iPhone X in landscape
+    @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : landscape){
+
+        .banner{ 
+            height: calc(100vh - 130px) !important;
+            .fixed{
+                position: fixed;
+                top: 50px;
+                left: 0;
+                height: 60%;
+                width: 100%;
+                img{
+                    margin-top: 18px !important;
+                    width: 40% !important;
+                }
+            }
+            .top-absolute{
+                position: absolute;
+                top: -36px;
+                left: 271px !important;
+                right: 0;
+                width: 83px;
+                transition: 1s;
+            }
+        }
+    }
+
+    // iPad in portrait
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+        .banner{
+            .fixed{
+                img{
+                    margin-top: -70px !important;
+                }
+            }
+            .top-absolute{
+                left: 250px;
+            }
+        }
+    }
+
+    // iPad in landscape
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+
+        .banner{
+            .fixed{
+                img{
+                    margin-top: -92px !important;
+                }
+            }
+            .top-absolute{
+                left: 250px;
+            }
+        }
+    }
+
+    // iPad Pro in portrait
+    // @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait){
+
+    //     .banner{
+    //         .fixed{
+    //             img{
+    //                 margin-top: -12px !important;
+    //                 width: 60%;
+    //             }
+    //         }
+    //         .top-absolute{
+    //             left: 310px;
+    //             width: 160px;
+    //         }
+    //     }
+    // }
+
+
+    // iPad Pro in landscape
+    // @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape){
+
+    //     .banner{
+    //         .fixed{
+    //             img{
+    //                 margin-top: 10px !important;
+    //                 width: 60%;
+    //             }
+    //         }
+    //         .top-absolute{
+    //             left: 344px;
+    //             width: 212px;
+    //         }
+    //     }
+    // }

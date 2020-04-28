@@ -46,24 +46,43 @@ export class PeopleComponent implements OnInit {
       
     // }
 
+
+
     $(window).scroll(function() {
-      if ( $(window).scrollTop() >= 50 ) {
-          $("#scroll-down").addClass("top1");
-      } else {
-          $("#scroll-down").removeClass("top1");
+      var scrollTop= $(window).scrollTop();
+      if(scrollTop == 0){
+        $("#scroll-down").css('top','-36px');
       }
+      else{
+        $("#scroll-down").css('top',-scrollTop+'px');
+        console.log(scrollTop);
+      }
+      // if ( $(window).scrollTop() >= scrollTop ) {
+          
+      // } else {
+      //     $("#scroll-down").removeClass("top1");
+      // }
   });
   
-  $(window).scroll(function() {    
-      if ($(window).scrollTop() >= 150) {
-          $("#scroll-down").addClass("top2");
-      } else {
-          $("#scroll-down").removeClass("top2");
-      }
-  });
+  // $(window).scroll(function() {    
+  //     if ($(window).scrollTop() >= 150) {
+  //         $("#scroll-down").addClass("top2");
+  //     } else {
+  //         $("#scroll-down").removeClass("top2");
+  //     }
+  // });
      
   }
 
+
+
+
+
+
+
+
+
+  
  
   ngOnInit() {
    if(this.cookie.get("userid")){
