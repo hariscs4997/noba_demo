@@ -163,21 +163,24 @@
 
 <!-- Video Section -->
 <div class="video-section" #worldtarget id="worldtarget">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <video poster="../../../assets/images/art.svg" class="has-media-controls-hidden">
-          <source src="assets/video/PayAccessVideo.mp4" type="video/mp4">
-        </video>
-        <h3 class="video-content">So, what does our world look like?</h3>
-        <img class="video-overlay-play-button" src="../../../assets/images/play.png" alt="Play video" />
-      </div>
-    </div>
+  <div class="poster" *ngIf="imgshow">
+    <img src="../../../assets/images/art.svg" />
   </div>
+  <div *ngIf="videoShow"> 
+    <video  class="has-media-controls-hidden" id="myVideo" autoplay controls>
+      <source src="assets/video/PayAccessVideo.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+  <h3 class="video-content">So, what does our world look like?</h3> 
+  <a (click)="clickkar()">   <img *ngIf="imgshow" class="video-overlay-play-button"  src="../../../assets/images/play.png" alt="Play video" /> </a> 
   <a  class="arrow"><img src="../../../assets/images/arrow.png" />Latest stories</a>
 </div>
 
 
+<!-- <video poster="../../../assets/images/art.svg" class="has-media-controls-hidden">
+  <source src="assets/video/PayAccessVideo.mp4" type="video/mp4">
+</video> -->
 
 <!-- Noba 3 Section -->
 <div class="wrapper">

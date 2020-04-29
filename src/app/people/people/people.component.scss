@@ -433,8 +433,16 @@
         position: relative;
         background-color: #368E75;
         height: calc(100vh - 70px);
-        padding: 30px 0px 30px 0px;
-    
+        .poster{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding-top: 100px;
+            img{
+                width: 70%;
+            }
+        }
         .arrow-down{
             position: absolute;
             margin-left: 30px;
@@ -1298,10 +1306,12 @@
                 }
             }
             .top-absolute{
-                left: 250px;
+                left: 370px;
             }
         }
     }
+
+
 
     // iPad Pro in portrait
     // @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait){
@@ -1337,3 +1347,8 @@
     //         }
     //     }
     // }
+
+
+
+
+    

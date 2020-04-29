@@ -20,6 +20,8 @@ export class PeopleComponent implements OnInit {
     register_interest:'./register-interest',
     business:'../for-business'
   }
+  videoShow: boolean=false;
+  imgshow: boolean=true;
 
   constructor(@Inject(DOCUMENT) private document: Document,private cookie: CookieService) {
 
@@ -92,10 +94,17 @@ export class PeopleComponent implements OnInit {
     $("#myModal").modal('show');
    }
   }
+
+  clickkar(){
+    
+    this.videoShow=true;
+    this.imgshow=false;
+  }
+
   cookie_value(){
-console.log('a')
-this.cookie.set("userid",uuid.v4(),365)
-$("#myModal").modal('hide');
+    console.log('a')
+    this.cookie.set("userid",uuid.v4(),365)
+    $("#myModal").modal('hide');
 
   }
 }
