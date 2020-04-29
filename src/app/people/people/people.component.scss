@@ -774,19 +774,6 @@
 
 
 
-
-    @media screen and (max-width: 320px){
-        .banner{
-            .fixed{
-                height: 72% !important;
-                img{
-                    margin-top: -46px;
-                }
-            }
-        }
-    }
-
-
     @media screen and (min-width: 300px) and (max-width: 767px) { 
         
         .header{
@@ -799,27 +786,7 @@
                 }
             }
         }
-        .banner{ 
-            .fixed{
-                position: fixed;
-                top: 50px;
-                left: 0;
-                height: 60%;
-                width: 100%;
-                img{
-                    margin-top: 10px;
-                    width: 70%;
-                }
-            }
-            .top-absolute{
-                position: absolute;
-                top: -36px;
-                left: 32%;
-                right: 0;
-                width: 57px;
-                transition: 1s;
-            }
-        }
+        
         .overlay{
             .overlay-content{
                 li{
@@ -1011,7 +978,7 @@
         .banner{
             .fixed{
                 img{
-                    margin-top: -105px;
+                    margin-top: -90px;
                 }
             }
             .top-absolute{
@@ -1044,10 +1011,22 @@
             }
         }
 
+        .header{
+            padding: 12px 15px 0px 0px;
+            .navbar{
+                padding: 10px 1px;
+                a{
+                    padding: 10px 6px;
+                    font-size: 14px;
+                }
+            }
+        }
+
         .banner{
+            height: calc(100vh - 260px);
             .fixed{
                 img{
-                    margin-top: -92px;
+                    margin-top: -178px;
                 }
             }
             .top-absolute{
