@@ -57,7 +57,6 @@ export class PeopleComponent implements OnInit {
       }
       else{
         $("#scroll-down").css('top',-scrollTop+'px');
-        console.log(scrollTop);
       }
       // if ( $(window).scrollTop() >= scrollTop ) {
           

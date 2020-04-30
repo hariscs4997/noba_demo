@@ -154,11 +154,11 @@
   <a class="arrow"><img src="../../../assets/images/arrow-green.png" />Our world</a>
 </div>
 <!-- What is Noba -->
-<div id="demo2" class="parallax image-0">
+<!-- <div id="demo2" class="parallax image-0">
   <div class="content">
     <p>What is Noba</p>
   </div>
-</div> 
+</div>  -->
 
 
 <!-- Video Section -->
@@ -172,7 +172,7 @@
       Your browser does not support HTML5 video.
     </video>
   </div>
-  <h3 class="video-content">So, what does our world look like?</h3> 
+  <h3 *ngIf="imgshow" class="video-content">So, what does our world look like?</h3> 
   <a (click)="clickkar()">   <img *ngIf="imgshow" class="video-overlay-play-button"  src="../../../assets/images/play.png" alt="Play video" /> </a> 
   <a  class="arrow"><img src="../../../assets/images/arrow.png" />Latest stories</a>
 </div>
@@ -209,7 +209,7 @@
   </div>
 </div> 
 
-<div class="parallax image-1">
+<!-- <div class="parallax image-1">
   <div class="content">
     <p>Connected worlds</p>
   </div>
@@ -228,7 +228,9 @@
   <div class="content">
     <p>Backing communities</p>
   </div>
-</div>
+</div> -->
+
+
 <div class="parallax image-5" #targetbetter>
   <div class="content">
     <p>Better all round</p>

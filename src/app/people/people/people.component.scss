@@ -951,12 +951,23 @@
 
 
 
-    @media screen and (min-width: 1920px) and (max-width: 1960px){
+    @media screen and (min-width: 1920px) and (max-width: 1975px){
 
         .banner{
             .fixed{
                 img{
                     margin-top: -77px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1900px){
+
+        .banner{
+            .fixed{
+                img{
+                    margin-top: -87px;
                 }
             }
         }
@@ -972,6 +983,36 @@
             }
         }
     }
+
+    @media screen and (max-width: 1300px){
+
+        .banner{
+            .top-absolute{
+                
+            }
+            .fixed{
+                img{
+                    margin-top: -88px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px){
+
+        .banner{
+            .top-absolute{
+                left: 370px;
+            }
+            .fixed{
+                img{
+                    margin-top: -87px;
+                }
+            }
+        }
+    }
+
+    
 
     @media screen and (max-width: 1024px){
 
@@ -1309,30 +1350,30 @@
     // }
 
     // // iPhone X in portrait
-    // @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait){
-    //     .banner{ 
-    //         height: calc(100vh - 268px) !important;
-    //         .fixed{
-    //             position: fixed;
-    //             top: 50px;
-    //             left: 0;
-    //             height: 60%;
-    //             width: 100%;
-    //             img{
-    //                 margin-top: 49px;
-    //                 width: 70%;
-    //             }
-    //         }
-    //         .top-absolute{
-    //             position: absolute;
-    //             top: -36px;
-    //             left: 115px;
-    //             right: 0;
-    //             width: 68px;
-    //             transition: 1s;
-    //         }
-    //     }
-    // }
+    @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait){
+        .banner{ 
+            height: calc(100vh - 268px) !important;
+            .fixed{
+                position: fixed;
+                top: 50px;
+                left: 0;
+                height: 60%;
+                width: 100%;
+                img{
+                    margin-top: 49px;
+                    width: 70%;
+                }
+            }
+            .top-absolute{
+                position: absolute;
+                top: -36px;
+                left: 115px;
+                right: 0;
+                width: 68px;
+                transition: 1s;
+            }
+        }
+    }
 
     // // iPhone X in landscape
     // @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : landscape){
@@ -1393,21 +1434,21 @@
 
 
     // iPad Pro in portrait
-    // @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait){
+    @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait){
 
-    //     .banner{
-    //         .fixed{
-    //             img{
-    //                 margin-top: -12px !important;
-    //                 width: 60%;
-    //             }
-    //         }
-    //         .top-absolute{
-    //             left: 310px;
-    //             width: 160px;
-    //         }
-    //     }
-    // }
+        .banner{
+            .fixed{
+                img{
+                    margin-top: -12px !important;
+                    width: 60%;
+                }
+            }
+            .top-absolute{
+                left: 310px;
+                width: 160px;
+            }
+        }
+    }
 
 
     // iPad Pro in landscape
