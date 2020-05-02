@@ -56,22 +56,22 @@
                 }
             }
             #home{
-                color: #086262;
+                color: #ff7755;
             }
             #noba{
-                color: #FF7757;
+                color: #075f5f;
             }
             #world{
-                color: #5F8143;
+                color: #308c72;
             }
             #app{
-                color: #368E75;
+                color: #5f8143;
             }
             #login{
-                color: #086262;
+                color: #5c7cbb;
             }
             #partner{
-                color: #5C7DBC;
+                color: #feae7f;
             }
         }
     }
@@ -104,6 +104,16 @@
             a{
                 padding: 10px 6px;
                 font-size: 10px;
+            }
+        }
+    }
+
+    .overlay{
+        .overlay-content{
+            li{
+                a{
+                    font-size: 35px;
+                }
             }
         }
     }
