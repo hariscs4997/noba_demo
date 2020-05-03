@@ -4,6 +4,7 @@ import { DOCUMENT } from '@angular/common';
 import { CookieService } from 'ngx-cookie-service';
 import * as uuid from 'uuid';
 
+
 declare var $:any;
 declare var $window:any;
 
@@ -86,7 +87,8 @@ export class PeopleComponent implements OnInit {
   
  
   ngOnInit() {
-   if(this.cookie.get("userid")){
+
+    if(this.cookie.get("userid")){
 
    } 
    else{   

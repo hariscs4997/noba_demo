@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators,FormControl } from '@angular/forms';
 import { AdService } from '../ad.service';
 import {Register} from '../ad'
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-register-interest',
@@ -45,7 +46,7 @@ export class RegisterInterestComponent implements OnInit {
     help        : new FormControl('',[Validators.required]),
     country        : new FormControl('',[Validators.required])
   });
-  constructor(private fb: FormBuilder, private RegisterService:AdService,private router: Router) {
+  constructor(private fb: FormBuilder, private RegisterService:AdService,private router: Router,private toastr: ToastrService) {
   
   }
   ngOnInit() {
@@ -60,7 +61,14 @@ save(){
 }
 onSubmit(){
   this.submitted = true;
+  if((<HTMLInputElement>document.querySelector('#people')).checked==false){
+    this.registration.Interest_People = false;
+  }
+  if((<HTMLInputElement>document.querySelector('#business')).checked==false){
+    this.registration.Interest_Business= false;
+  }
   this.save();
+  this.toastr.success('Thank you for Registering.');
   this.router.navigate(['/']);
 }
 }

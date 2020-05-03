@@ -14,6 +14,8 @@ import { AngularFireMessagingModule } from '@angular/fire/messaging';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireFunctionsModule } from '@angular/fire/functions';
 import {CookieService} from 'ngx-cookie-service';
+import { ToastrModule } from 'ngx-toastr';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,9 @@ import {CookieService} from 'ngx-cookie-service';
     AngularFireMessagingModule,
     AngularFireDatabaseModule,
     AngularFireFunctionsModule,
-    
+    ToastrModule.forRoot({
+      // timeOut: 10000
+        })
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]
