@@ -173,7 +173,7 @@
         position: fixed;
         top: 50px;
         left: 0;
-        height: 94%;
+        height: calc(100vh - 150px);
         width: 100%;
         
         /* this is what centers your element in the fixed wrapper*/
@@ -182,7 +182,7 @@
         justify-content: center; /* aligns on vertical for column */
         align-items: center; /* aligns on horizontal for column */
         img{
-            margin-top: -97px;
+            margin-top: 15px;
             width: 400px;
         }
     }
@@ -764,6 +764,106 @@
 
 
 
+    @media screen and (max-device-width: 1024px){
+        .banner{
+            .top-absolute{
+                left: 370px;
+            }
+        }
+    }
+
+    @media screen and (max-device-width: 828px){
+        .banner{
+            .top-absolute{
+                left: 250px;
+            }
+        }
+
+        .wrapper{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-device-width: 768px){
+        .banner{
+            .fixed{
+                img{
+                    margin-top: 20px;
+                }
+            }
+            .top-absolute{
+                left: 250px;
+            }
+        }
+
+        .wrapper{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-device-width: 425px){
+        .banner{
+            .fixed{
+                img{
+                    margin-top: -10px;
+                    width: 250px;
+                }
+            }
+            .top-absolute{
+                left: 144px;
+                width: 65px;
+            }
+        }
+
+        .wrapper{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-device-width: 414px){
+        .banner{
+            // height: calc(100vh - 300px);
+            .fixed{
+                // height: calc(100vh - 300px);
+                img{
+                    margin-top: -10px;
+                    width: 250px;
+                }
+            }
+            .top-absolute{
+                left: 138px;
+                width: 66px;
+            }
+        }
+
+        .wrapper{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-device-width: 375px){
+        .banner{
+            .top-absolute{
+                left: 119px;
+            }
+        }
+    }
+
+    @media screen and (max-device-width: 320px){
+        .banner{
+            .top-absolute{
+                left: 91px;
+            }
+        }
+    }
 
 
 
@@ -951,274 +1051,276 @@
 
 
 
-    @media screen and (min-width: 1920px) and (max-width: 1975px){
+    // @media screen and (min-width: 1920px) and (max-width: 1975px){
 
-        .banner{
-            .fixed{
-                img{
-                    margin-top: -77px;
-                }
-            }
-        }
-    }
+    //     .banner{
+    //         .fixed{
+    //             img{
+    //                 margin-top: -77px;
+    //             }
+    //         }
+    //     }
+    // }
 
-    @media screen and (max-width: 1900px){
+    // @media screen and (max-width: 1900px){
 
-        .banner{
-            .fixed{
-                img{
-                    margin-top: -87px;
-                }
-            }
-        }
-    }
+    //     .banner{
+    //         .fixed{
+    //             img{
+    //                 margin-top: -87px;
+    //             }
+    //         }
+    //     }
+    // }
 
-    @media screen and (max-width: 1440px){
+    // @media screen and (max-width: 1440px){
 
-        .banner{
-            .fixed{
-                img{
-                    margin-top: -95px;
-                }
-            }
-        }
-    }
+    //     .banner{
+    //         .fixed{
+    //             img{
+    //                 margin-top: -95px;
+    //             }
+    //         }
+    //     }
+    // }
 
-    @media screen and (max-width: 1300px){
+    // @media screen and (max-width: 1300px){
 
-        .banner{
-            .top-absolute{
+    //     .banner{
+    //         .top-absolute{
                 
-            }
-            .fixed{
-                img{
-                    margin-top: -88px;
-                }
-            }
-        }
-    }
+    //         }
+    //         .fixed{
+    //             img{
+    //                 margin-top: -88px;
+    //             }
+    //         }
+    //     }
+    // }
 
-    @media screen and (max-width: 1200px){
+    // @media screen and (max-width: 1200px){
 
-        .banner{
-            .top-absolute{
-                left: 370px;
-            }
-            .fixed{
-                img{
-                    margin-top: -87px;
-                }
-            }
-        }
-    }
+    //     .banner{
+    //         .top-absolute{
+    //             left: 370px;
+    //         }
+    //         .fixed{
+    //             img{
+    //                 margin-top: -87px;
+    //             }
+    //         }
+    //     }
+    // }
 
 
-    @media screen and (max-width: 1024px){
+    // @media screen and (max-width: 1024px){
 
-        .banner{
-            .fixed{
-                img{
-                    margin-top: -90px;
-                }
-            }
-            .top-absolute{
-                left: 370px;
-            }
-        }
+    //     .banner{
+    //         .fixed{
+    //             img{
+    //                 margin-top: -90px;
+    //             }
+    //         }
+    //         .top-absolute{
+    //             left: 370px;
+    //         }
+    //     }
 
-        .parallax2{
-            .icon{
-                padding: 50px 40px 50px;
-            }
-        }
-    }
+    //     .parallax2{
+    //         .icon{
+    //             padding: 50px 40px 50px;
+    //         }
+    //     }
+    // }
 
-    @media screen and (max-width: 768px) { 
+    // @media screen and (max-width: 768px) { 
 
-        .modal{
-            .modal-body{
-                .cookies{
-                    top: 30%;
-                    .cookie-left{
-                        p{
-                            max-width: 100%;
-                        }
-                    }
-                    .cookie-right{
-                        margin-top: 30px;
-                    }
-                }
-            }
-        }
+    //     .modal{
+    //         .modal-body{
+    //             .cookies{
+    //                 top: 30%;
+    //                 .cookie-left{
+    //                     p{
+    //                         max-width: 100%;
+    //                     }
+    //                 }
+    //                 .cookie-right{
+    //                     margin-top: 30px;
+    //                 }
+    //             }
+    //         }
+    //     }
 
-        .header{
-            padding: 12px 15px 0px 0px;
-            .navbar{
-                padding: 10px 1px;
-                a{
-                    padding: 10px 6px;
-                    font-size: 14px;
-                }
-            }
-        }
+    //     .header{
+    //         padding: 12px 15px 0px 0px;
+    //         .navbar{
+    //             padding: 10px 1px;
+    //             a{
+    //                 padding: 10px 6px;
+    //                 font-size: 14px;
+    //             }
+    //         }
+    //     }
 
-        .banner{
-            height: calc(100vh - 260px);
-            .fixed{
-                img{
-                    margin-top: -178px;
-                }
-            }
-            .top-absolute{
-                left: 250px;
-            }
-        }
+    //     .banner{
+    //         height: calc(100vh - 260px);
+    //         .fixed{
+    //             img{
+    //                 margin-top: -178px;
+    //             }
+    //         }
+    //         .top-absolute{
+    //             left: 250px;
+    //         }
+    //     }
 
-        .slider{
-            height: auto;
-            .slide-content{
-                h3{
-                    font-size: 30px;
-                }
-                p{
-                    font-size: 14px;
-                }
-            }
-        }
+    //     .slider{
+    //         height: auto;
+    //         .slide-content{
+    //             h3{
+    //                 font-size: 30px;
+    //             }
+    //             p{
+    //                 font-size: 14px;
+    //             }
+    //         }
+    //     }
 
-        .wrapper{
-            .h-400{
-                img{
-                    width: 100%;
-                }
-            }
-        }
+    //     .wrapper{
+    //         .h-400{
+    //             img{
+    //                 width: 100%;
+    //             }
+    //         }
+    //     }
 
-        .parallax2{
-            .icon{
-                padding: 50px 20px 50px;
-                p{
-                    font-size: 15px;
-                }
-            }
-        }
-    }
+    //     .parallax2{
+    //         .icon{
+    //             padding: 50px 20px 50px;
+    //             p{
+    //                 font-size: 15px;
+    //             }
+    //         }
+    //     }
+    // }
 
-    @media screen and (max-width: 636px){
-        .banner{
-            .fixed{
-                img{
-                    margin-top: 131px;
-                }
-            }
-            .top-absolute{
-                left: 149px;
-                width: 21%;
-            }
-        }
-    }
+    // @media screen and (max-width: 636px){
+    //     .banner{
+    //         .fixed{
+    //             img{
+    //                 margin-top: 131px;
+    //             }
+    //         }
+    //         .top-absolute{
+    //             left: 149px;
+    //             width: 21%;
+    //         }
+    //     }
+    // }
 
 
      // iPhone 5 & 5S in portrait
-     @media only screen and (max-device-width: 568px){
 
-        .banner{ 
-            .fixed{
-                position: fixed;
-                top: 50px;
-                left: 0;
-                height: 60%;
-                width: 100%;
-                img{
-                    margin-top: -38px;
-                    width: 40%;
-                }
-            }
-            .top-absolute{
-                position: absolute;
-                top: -36px;
-                left: 39%;
-                right: 0;
-                width: 57px;
-                transition: 1s;
-            }
-        }
-    }
 
-    @media only screen and (max-device-width: 425px){
+    //  @media only screen and (max-device-width: 568px){
 
-        .banner{ 
-            .fixed{
-                position: fixed;
-                top: 50px;
-                left: 0;
-                height: 60%;
-                width: 100%;
-                img{
-                    margin-top: 95px;
-                    width: 60%;
-                }
-            }
-            .top-absolute{
-                position: absolute;
-                top: -36px;
-                left: 33.6%;
-                right: 0;
-                width: 65px;
-                transition: 1s;
-            }
-        }
-    }
+    //     .banner{ 
+    //         .fixed{
+    //             position: fixed;
+    //             top: 50px;
+    //             left: 0;
+    //             height: 60%;
+    //             width: 100%;
+    //             img{
+    //                 margin-top: -38px;
+    //                 width: 40%;
+    //             }
+    //         }
+    //         .top-absolute{
+    //             position: absolute;
+    //             top: -36px;
+    //             left: 39%;
+    //             right: 0;
+    //             width: 57px;
+    //             transition: 1s;
+    //         }
+    //     }
+    // }
 
-    @media only screen and (max-device-width: 375px){
+    // @media only screen and (max-device-width: 425px){
 
-        .banner{ 
-            .fixed{
-                position: fixed;
-                top: 50px;
-                left: 0;
-                height: 60%;
-                width: 100%;
-                img{
-                    margin-top: 88px;
-                    width: 60%;
-                }
-            }
-            .top-absolute{
-                position: absolute;
-                top: -36px;
-                left: 33.6%;
-                right: 0;
-                width: 57px;
-                transition: 1s;
-            }
-        }
-    }
+    //     .banner{ 
+    //         .fixed{
+    //             position: fixed;
+    //             top: 50px;
+    //             left: 0;
+    //             height: 60%;
+    //             width: 100%;
+    //             img{
+    //                 margin-top: 95px;
+    //                 width: 60%;
+    //             }
+    //         }
+    //         .top-absolute{
+    //             position: absolute;
+    //             top: -36px;
+    //             left: 33.6%;
+    //             right: 0;
+    //             width: 65px;
+    //             transition: 1s;
+    //         }
+    //     }
+    // }
 
-    @media only screen and (max-device-width: 320px){
+    // @media only screen and (max-device-width: 375px){
 
-        .banner{ 
-            .fixed{
-                position: fixed;
-                top: 50px;
-                left: 0;
-                height: 60%;
-                width: 100%;
-                img{
-                    margin-top: 6px;
-                    width: 60%;
-                }
-            }
-            .top-absolute{
-                position: absolute;
-                top: -36px;
-                left: 33.6%;
-                right: 0;
-                width: 48px;
-                transition: 1s;
-            }
-        }
-    }
+    //     .banner{ 
+    //         .fixed{
+    //             position: fixed;
+    //             top: 50px;
+    //             left: 0;
+    //             height: 60%;
+    //             width: 100%;
+    //             img{
+    //                 margin-top: 88px;
+    //                 width: 60%;
+    //             }
+    //         }
+    //         .top-absolute{
+    //             position: absolute;
+    //             top: -36px;
+    //             left: 33.6%;
+    //             right: 0;
+    //             width: 57px;
+    //             transition: 1s;
+    //         }
+    //     }
+    // }
+
+    // @media only screen and (max-device-width: 320px){
+
+    //     .banner{ 
+    //         .fixed{
+    //             position: fixed;
+    //             top: 50px;
+    //             left: 0;
+    //             height: 60%;
+    //             width: 100%;
+    //             img{
+    //                 margin-top: 6px;
+    //                 width: 60%;
+    //             }
+    //         }
+    //         .top-absolute{
+    //             position: absolute;
+    //             top: -36px;
+    //             left: 33.6%;
+    //             right: 0;
+    //             width: 48px;
+    //             transition: 1s;
+    //         }
+    //     }
+    // }
 
     // // Iphone 6,7,8 Portrait
     // @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
@@ -1349,30 +1451,31 @@
     // }
 
     // // iPhone X in portrait
-    @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait){
-        .banner{ 
-            height: calc(100vh - 268px) !important;
-            .fixed{
-                position: fixed;
-                top: 50px;
-                left: 0;
-                height: 60%;
-                width: 100%;
-                img{
-                    margin-top: 49px;
-                    width: 70%;
-                }
-            }
-            .top-absolute{
-                position: absolute;
-                top: -36px;
-                left: 115px;
-                right: 0;
-                width: 68px;
-                transition: 1s;
-            }
-        }
-    }
+
+    // @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait){
+    //     .banner{ 
+    //         height: calc(100vh - 268px) !important;
+    //         .fixed{
+    //             position: fixed;
+    //             top: 50px;
+    //             left: 0;
+    //             height: 60%;
+    //             width: 100%;
+    //             img{
+    //                 margin-top: 49px;
+    //                 width: 70%;
+    //             }
+    //         }
+    //         .top-absolute{
+    //             position: absolute;
+    //             top: -36px;
+    //             left: 115px;
+    //             right: 0;
+    //             width: 68px;
+    //             transition: 1s;
+    //         }
+    //     }
+    // }
 
     // // iPhone X in landscape
     // @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : landscape){
@@ -1433,21 +1536,22 @@
 
 
     // iPad Pro in portrait
-    @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait){
 
-        .banner{
-            .fixed{
-                img{
-                    margin-top: -12px !important;
-                    width: 60%;
-                }
-            }
-            .top-absolute{
-                left: 310px;
-                width: 160px;
-            }
-        }
-    }
+    // @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait){
+
+    //     .banner{
+    //         .fixed{
+    //             img{
+    //                 margin-top: -12px !important;
+    //                 width: 60%;
+    //             }
+    //         }
+    //         .top-absolute{
+    //             left: 310px;
+    //             width: 160px;
+    //         }
+    //     }
+    // }
 
 
     // iPad Pro in landscape

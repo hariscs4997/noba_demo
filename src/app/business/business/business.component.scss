@@ -180,10 +180,10 @@
     height: calc(100vh - 150px);
     position: relative;
     .fixed{
+        height: calc(100vh - 150px);
         position: fixed;
         top: 50px;
         left: 0;
-        height: 94%;
         width: 100%;
         
         /* this is what centers your element in the fixed wrapper*/
@@ -192,7 +192,7 @@
         justify-content: center; /* aligns on vertical for column */
         align-items: center; /* aligns on horizontal for column */
         img{
-            margin-top: -97px;
+            margin-top: 20px;
             width: 400px;
         }
     }
@@ -316,8 +316,50 @@
     color: #ff7957;
 }
 
-/* parallax */
 
+.wrapper{
+    .purple{
+        background-color: #ffffff;
+    }
+    .green{
+        background-color: #f9f7f7;
+    }
+    .light-green{
+        background-color: #fffaf7;
+    }
+    .h-400 {
+        height: 400px;
+    }
+    .bottom-right {
+        bottom: 30px;
+        right: 30px;
+        width: 100%;
+        position: absolute;
+    }
+    p{
+        font-family: BeirutText-Book;
+        color: #ff6d00;
+    }
+    a{
+        font-family: BeirutText-Medium;
+        font-size: 16px;
+    }
+    .padding{
+        padding: 1.5rem;
+    }
+    .btn-primary {
+        color: #ff6d00!important;
+        background-color: #007bff00!important;
+        border-color: #ff6d00!important;
+        border-width: 1px!important;
+        width: 205px!important;
+        height: 33px!important;
+        line-height: 20px!important;
+    }
+}
+
+
+/* parallax */
 .parallax{
     position: relative;
     background-color: #ff7757;
@@ -706,185 +748,34 @@
 
 
 
-  @media screen and (max-width: 2560px){
-
-    .banner{
-        .fixed{
-            img{
-                margin-top: -58px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1975px){
-
-    .banner{
-        .fixed{
-            img{
-                margin-top: -72px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1900px){
-
-    .banner{
-        .fixed{
-            img{
-                margin-top: -72px;
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width: 1440px){
-
-    .banner{
-        .fixed{
-            img{
-                margin-top: -80px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1300px){
-
-    .banner{
-        .top-absolute{
-            
-        }
-        .fixed{
-            img{
-                margin-top: -82px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1200px){
-
+ 
+  @media screen and (max-device-width: 1024px){
     .banner{
         .top-absolute{
             left: 370px;
         }
-        .fixed{
-            img{
-                margin-top: -80px;
-            }
-        }
     }
 }
 
-@media screen and (max-width: 1024px){
-
+@media screen and (max-device-width: 828px){
     .banner{
-        .fixed{
-            img{
-                margin-top: -84px;
-            }
-        }
         .top-absolute{
-            left: 370px;
-        }
-    }
-
-    .parallax{
-        .content{
-            p{
-                font-size: 18px;
-            }
-        }
-    }
-
-    .parallax2{
-        .icon{
-            padding: 50px 40px 50px;
+            left: 250px;
         }
     }
 }
 
-@media screen and (max-width: 992px){
-
+@media screen and (max-device-width: 768px){
     .banner{
         .fixed{
-            height: 77%;
             img{
-                margin-top: 63px;
+                margin-top: 25px;
             }
         }
         .top-absolute{
             left: 250px;
             width: 104px;
             top: -36px;
-        }
-    }
-
-}
-
-@media screen and (max-width: 768px) { 
-
-    .modal{
-        .modal-body{
-            .cookies{
-                top: 30%;
-                .cookie-left{
-                    p{
-                        max-width: 100%;
-                    }
-                }
-                .cookie-right{
-                    margin-top: 30px;
-                }
-            }
-        }
-    }
-
-    .header{
-        padding: 12px 15px 0px 0px;
-        .navbar{
-            padding: 10px 1px;
-            a{
-                padding: 10px 6px;
-                font-size: 14px;
-            }
-        }
-    }
-
-    .banner{
-        .fixed{
-            height: 81%;
-            img{
-                margin-top: 40px;
-            }
-        }
-        .top-absolute{
-            left: 250px;
-            width: 104px;
-            top: -36px;
-        }
-    }
-
-    .slider{
-        height: auto;
-        .slide-content{
-            h3{
-                font-size: 30px;
-            }
-            p{
-                font-size: 14px;
-            }
-        }
-    }
-
-    .wrapper{
-        .h-400{
-            img{
-                width: 100%;
-            }
         }
     }
 
@@ -901,126 +792,31 @@
         }
     }
 
-    .parallax2{
-        .icon{
-            padding: 50px 20px 50px;
-            p{
-                font-size: 15px;
-            }
-        }
-    }
-}
-
-// iphone Tablet
-@media only screen and (max-device-width: 768px){
-
-    .banner{ 
-        height: calc(100% - 250px);
-        .fixed{
-            position: fixed;
-            top: 50px;
-            left: 0;
-            height: 60%;
+    .wrapper{
+        img{
             width: 100%;
-            img{
-                margin-top: 181px;
-                width: 50%;
-            }
-        }
-        .top-absolute{
-            position: absolute;
-            top: -36px;
-            left: 35.5%;
-            right: 0;
-            width: 97px;
-            transition: 1s;
         }
     }
 }
 
-
-@media screen and (max-width: 636px){
+@media screen and (max-device-width: 425px){
     .banner{
         .fixed{
             img{
-                margin-top: 131px;
+                margin-top: -8px;
+                width: 250px;
             }
         }
         .top-absolute{
-            left: 149px;
-            width: 21%;
-        }
-    }
-}
-
- // iPhone 5 & 5S in portrait
- @media only screen and (max-device-width: 568px){
-
-    .banner{ 
-        .fixed{
-            position: fixed;
-            top: 50px;
-            left: 0;
-            height: 78%;
-            width: 100%;
-            img{
-                margin-top: 7px;
-                width: 40%;
-            }
-        }
-        .top-absolute{
-            position: absolute;
-            top: -36px;
-            left: 39%;
-            right: 0;
-            width: 57px;
-            transition: 1s;
+            left: 144px;
+            width: 65px;
         }
     }
 
     .parallax{
         .content{
-            padding-bottom: 130px;
-            padding-top: 45px;
-            p{
-                font-size: 11px;
-            }
-            .big-o{
-                top: -160px;
-            }
-        }
-    }
-}
-
-@media only screen and (max-device-width: 425px){
-
-    .banner{ 
-        .fixed{
-            position: fixed;
-            top: 50px;
-            left: 0;
-            height: 60%;
-            width: 100%;
-            img{
-                margin-top: 50px;
-                width: 60%;
-            }
-        }
-        .top-absolute{
-            position: absolute;
-            top: -36px;
-            left: 128px;
-            right: 0;
-            width: 76px;
-            transition: 1s;
-        }
-    }
-
-    .parallax{
-        .content{
-            width: 40%;
             padding-bottom: 100px;
-            padding-top: 30px;
+            padding-top: 25px;
             p{
                 font-size: 9px;
             }
@@ -1029,88 +825,79 @@
             }
         }
     }
+
+    .wrapper{
+        img{
+            width: 100%;
+        }
+    }
 }
 
-
-
-// Iphone
-@media only screen and (max-device-width: 375px){
-
-    .banner{ 
-        height: calc(100% - 100px);
+@media screen and (max-device-width: 414px){
+    .banner{
+        // height: calc(100vh - 300px);
         .fixed{
-            position: fixed;
-            top: 50px;
-            left: 0;
-            height: 60%;
-            width: 100%;
+            // height: calc(100vh - 300px);
             img{
-                margin-top: 155px;
-                width: 60%;
+                margin-top: -6px;
+                width: 250px;
             }
         }
         .top-absolute{
-            position: absolute;
-            top: -36px;
-            left: 33.6%;
-            right: 0;
-            width: 57px;
-            transition: 1s;
-        }
-    }
-
-    .slide{
-        .slide-content{
-            p{
-                font-size: 12px;
-            }
+            left: 138px;
+            width: 66px;
         }
     }
 
     .parallax{
         .content{
-            width: 40%;
-            padding-bottom: 80px;
-            padding-top: 15px;
+            padding-bottom: 100px;
+            padding-top: 25px;
             p{
                 font-size: 8px;
             }
             .big-o{
-                top: -118px;
+                top: -130px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-device-width: 375px){
+    .banner{
+        .top-absolute{
+            left: 119px;
+        }
+    }
+
+    .parallax{
+        .content{
+            padding-bottom: 90px;
+            padding-top: 25px;
+            width: 42%;
+            p{
+                font-size: 8px;
+            }
+            .big-o{
+                top: -115px;
             }
         }
     }
 }
 
-
-@media only screen and (max-device-width: 320px){
-
-    .banner{ 
-        height: calc(100% - 100px);
-        .fixed{
-            position: fixed;
-            top: 50px;
-            left: 0;
-            height: 60%;
-            width: 100%;
-            img{
-                margin-top: 106px;
-                width: 60%;
-            }
-        }
+@media screen and (max-device-width: 320px){
+    .banner{
         .top-absolute{
-            position: absolute;
-            top: -36px;
-            left: 33.6%;
-            right: 0;
-            width: 48px;
-            transition: 1s;
+            left: 91px;
         }
     }
 
     .parallax{
         .content{
             padding-bottom: 70px;
+            padding-top: 10px;
+            width: 42%;
             p{
                 font-size: 7px;
             }
@@ -1121,248 +908,67 @@
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 767px) { 
-        
-    .header{
-        padding: 12px 15px 0px 0px;
-        .navbar{
-            padding: 10px 1px;
-            a{
-                padding: 10px 6px;
-                font-size: 10px;
-            }
-        }
-    }
-    
-    .overlay{
-        .overlay-content{
-            li{
-                line-height: 2;
-                a{
-                    font-size: 30px;
-                }
-            }
-        }
-    }
-    .arrow{
-        left: -65px;
-        font-size: 12px;
-        bottom: -10px;
-        img{
-            margin-right: 20px;
-            max-width: 70px;
-        }
-    }
-    .modal{
-        .modal-body{
-            .cookies{
-                top: 5%;
-                .cookie-left{
-                    p{
-                        max-width: 100%;
-                    }
-                }
-                .cookie-right{
-                    margin-top: 20px;
-                }
-            }
-        }
-    }
-    .slide{
-        .bullots{
-            margin-bottom: 6px;
-            ol{
-                width: 20px;
-                text-align: center;
-                border-radius: 50px;
-                height: 20px;
-                font-size: 14px;
-            }
-        }
-        .slider{
-            height: auto;
-            .slide-content{
-                .box{
-                    padding: 0px;
-                }
-                h3{
-                    font-size: 14px;
-                    margin-bottom: 0px;
-                }
-                p{
-                    margin-top: 0px;
-                    font-size: 12px;
-                    margin-bottom: 6px;
-                }
-                .box{
-                    a{
-                        img{
-                            max-width: 100px;
-                        }
-                    }
-                    form{
-                        input{
-                            width: 70%;
-                            background-size: 30px;
-                            padding: 10px 10px 12px 50px;
-                            border-bottom-left-radius: 0;
-                            border-bottom-right-radius: 0;
-                        }
-                        button{
-                            padding: 10px 40px;
-                            margin-top: 2px;
-                            width: 70%;
-                        }
-                    }
-                }
-            }
-        }
-        .slide-arow{
-            left: -65px;
-            font-size: 12px;
-            bottom: -10px;
-            img{
-                margin-right: 20px;
-                max-width: 70px;
-            }
-        }
-    }
-    .parallax2{
-        .content{
-            padding-bottom: 40px;
-            width: 100%;
-        }
-        .icon{
-            padding: 50px 45px 50px;
-        }
-        .arrow-green{
-            left: -55px;
-            font-size: 12px;
-            bottom: -10px;
-            img{
-                margin-right: 20px;
-                max-width: 70px;
-            }
-        }
-    }
 
-    .app{
-        a{
-            img{
-                margin-top: 6px;
-            }
-        }
-        form{
-            input{
-                width: 90%;
-                background-size: 50px;
-            }
-            button{
-                width: 90%;
-                border-radius: 0px;
-                padding: 10px;
-                margin-top: 6px;
-            }
-        }
-    }
-    .video-section{
-        h3{
-            width: 80%;
-            margin-right: auto;
-        }
-        .arrow{
-            left: -57px;
-            font-size: 12px;
-            bottom: -10px;
-            img{
-                margin-right: 20px;
-                max-width: 70px;
-            }
-        }
-    }
+// @media screen and (max-width: 768px) { 
 
-    // .parallax{
-    //     .content{
-    //         width: 75%;
-    //         p{
-    //             font-size: 20px;
-    //         }
-    //     }
-    // }
+//     .modal{
+//         .modal-body{
+//             .cookies{
+//                 top: 30%;
+//                 .cookie-left{
+//                     p{
+//                         max-width: 100%;
+//                     }
+//                 }
+//                 .cookie-right{
+//                     margin-top: 30px;
+//                 }
+//             }
+//         }
+//     }
 
-    .footer{
-        padding: 60px 27px 24px;
-    }
-
-}
+//     .header{
+//         padding: 12px 15px 0px 0px;
+//         .navbar{
+//             padding: 10px 1px;
+//             a{
+//                 padding: 10px 6px;
+//                 font-size: 14px;
+//             }
+//         }
+//     }
 
 
-// // iPhone X in portrait
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait){
-    .banner{ 
-        height: calc(100vh - 100px) !important;
-        .fixed{
-            position: fixed;
-            top: 50px;
-            left: 0;
-            height: 80%;
-            width: 100%;
-            img{
-                margin-top: 58px;
-                width: 70%;
-            }
-        }
-        .top-absolute{
-            position: absolute;
-            top: -36px;
-            left: 114px;
-            right: 0;
-            width: 70px;
-            transition: 1s;
-        }
-    }
-}
-// // iPhone X in landscape
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : landscape){
-    .banner{ 
-        height: calc(100vh - 100px) !important;
-        .fixed{
-            position: fixed;
-            top: 50px;
-            left: 0;
-            height: 80%;
-            width: 100%;
-            img{
-                margin-top: -30px;
-                width: 35%;
-            }
-        }
-        .top-absolute{
-            position: absolute;
-            top: -36px;
-            left: 282px;
-            right: 0;
-            width: 73px;
-            transition: 1s;
-        }
-    }
-}
+//     .slider{
+//         height: auto;
+//         .slide-content{
+//             h3{
+//                 font-size: 30px;
+//             }
+//             p{
+//                 font-size: 14px;
+//             }
+//         }
+//     }
 
-// iPad Pro in portrait
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait){
+//     .wrapper{
+//         .h-400{
+//             img{
+//                 width: 100%;
+//             }
+//         }
+//     }
 
-    .banner{
-        .fixed{
-            img{
-                margin-top: -12px !important;
-                width: 60%;
-            }
-        }
-        .top-absolute{
-            left: 310px;
-            width: 161px;
-        }
-    }
-}
+
+//     .parallax2{
+//         .icon{
+//             padding: 50px 20px 50px;
+//             p{
+//                 font-size: 15px;
+//             }
+//         }
+//     }
+// }
+
 
 
