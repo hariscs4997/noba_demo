@@ -579,6 +579,10 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         .content{
             padding-bottom: 40px;
             padding-top: 50px;
@@ -606,12 +610,17 @@
           display: flex;
           /* The image used */
         background-image: url("../../../assets/images/peoples.jpg");
+        background-color: #fff;
         /* Set a specific height */
         height: 600px;
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
         
       }
@@ -774,6 +783,18 @@
                 left: 370px;
             }
         }
+
+        .video-section{
+            height: auto;
+            h3{
+                font-size: 30px;
+            }
+            a{
+                .video-overlay-play-button{
+                    width: 150px;
+                }
+            }
+        }
     }
 
     @media screen and (max-device-width: 828px){
@@ -809,6 +830,38 @@
         }
     }
 
+    @media screen and (max-device-width: 736px){
+        .banner{
+            .top-absolute{
+                left: 160px;
+            }
+        }
+    }
+
+    @media screen and (max-device-width: 667px){
+        .banner{
+            .top-absolute{
+                left: 160px;
+            }
+        }
+    }
+
+    @media screen and (max-device-width: 568px){
+        .banner{
+            .top-absolute{
+                left: 174px;
+            }
+        }
+    }
+
+    @media screen and (max-device-width: 480px){
+        .banner{
+            .top-absolute{
+                left: 130px;
+            }
+        }
+    }
+
     @media screen and (max-device-width: 425px){
         .banner{
             .fixed{
@@ -823,12 +876,31 @@
             }
         }
 
+        .video-section{
+            height: auto;
+            h3{
+                font-size: 30px;
+            }
+            a{
+                .video-overlay-play-button{
+                    width: 150px;
+                }
+            }
+        }
+
         .wrapper{
             img{
                 width: 100%;
             }
         }
+
+
+        .fotter-end{
+            font-size: 12px;
+            margin-top: 16px;
+        }
     }
+
 
     @media screen and (max-device-width: 414px){
         .banner{
@@ -853,10 +925,28 @@
         }
     }
 
+    
+
+    @media screen and (max-device-width: 384px){
+        .banner{
+            .top-absolute{
+                left: 123px;
+            }
+        }
+    }
+
     @media screen and (max-device-width: 375px){
         .banner{
             .top-absolute{
                 left: 119px;
+            }
+        }
+    }
+
+    @media screen and (max-device-width: 360px){
+        .banner{
+            .top-absolute{
+                left: 111px;
             }
         }
     }

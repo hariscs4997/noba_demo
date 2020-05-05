@@ -429,6 +429,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     position: relative;
     .content{
         padding-bottom: 40px;
@@ -803,6 +807,38 @@
     }
 }
 
+@media screen and (max-device-width: 736px){
+    .banner{
+        .top-absolute{
+            left: 160px;
+        }
+    }
+}
+
+@media screen and (max-device-width: 667px){
+    .banner{
+        .top-absolute{
+            left: 160px;
+        }
+    }
+}
+
+@media screen and (max-device-width: 568px){
+    .banner{
+        .top-absolute{
+            left: 174px;
+        }
+    }
+}
+
+@media screen and (max-device-width: 480px){
+    .banner{
+        .top-absolute{
+            left: 130px;
+        }
+    }
+}
+
 @media screen and (max-device-width: 425px){
     .banner{
         .fixed{
@@ -834,6 +870,11 @@
         img{
             width: 100%;
         }
+    }
+
+    .fotter-end{
+        font-size: 12px;
+        margin-top: 16px;
     }
 }
 
@@ -868,6 +909,14 @@
 
 }
 
+@media screen and (max-device-width: 384px){
+    .banner{
+        .top-absolute{
+            left: 123px;
+        }
+    }
+}
+
 @media screen and (max-device-width: 375px){
     .banner{
         .top-absolute{
@@ -886,6 +935,14 @@
             .big-o{
                 top: -115px;
             }
+        }
+    }
+}
+
+@media screen and (max-device-width: 360px){
+    .banner{
+        .top-absolute{
+            left: 111px;
         }
     }
 }
