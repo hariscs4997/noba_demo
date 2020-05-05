@@ -87,7 +87,6 @@ export class PeopleComponent implements OnInit {
   
  
   ngOnInit() {
-
     if(this.cookie.get("userid")){
 
    } 
