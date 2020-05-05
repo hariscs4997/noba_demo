@@ -195,30 +195,32 @@
         width: 104px;
         transition: 1s;
     }
-    .arrow-down{
+    // .arrow-down{
         
+    //     position: absolute;
+    //     width: 95%;
+    //     top: 82%;
+    //     z-index: 10;
+    //     img{
+    //         width: 20px;
+    //     } 
+    // }
+
+    .arrow{
+        font-family: BeirutText-Medium;
+        color: #FFFF96;
+        transform: rotate(90deg);
         position: absolute;
-        width: 95%;
-        top: 82%;
-        z-index: 10;
+        left: -80px;
+        bottom: -10px;
+        z-index: 1;
+        cursor: pointer;
         img{
-            width: 20px;
-        } 
+            margin-right: 40px;
+        }
     }
 }
-.arrow{
-    font-family: BeirutText-Medium;
-    color: #FFFF96;
-    transform: rotate(90deg);
-    position: absolute;
-    left: -80px;
-    bottom: -10px;
-    z-index: 1;
-    cursor: pointer;
-    img{
-        margin-right: 40px;
-    }
-}
+
 .arrow:hover{
     color: #FFFF96;
 }
@@ -383,15 +385,29 @@
           margin-bottom: 30px;
       }
   }
-  .arrow-down{
+//   .arrow-down{
+//         position: absolute;
+//         margin-left: 30px;
+//         width: 95%;
+//         top: 70%;
+//         z-index: 10;
+//         img{
+//             width: 20px;
+//         } 
+//     }
+
+    .arrow{
+        font-family: BeirutText-Medium;
+        color: #FFFF96;
+        transform: rotate(90deg);
         position: absolute;
-        margin-left: 30px;
-        width: 95%;
-        top: 70%;
-        z-index: 10;
+        left: -70px;
+        bottom: -10px;
+        z-index: 1;
+        cursor: pointer;
         img{
-            width: 20px;
-        } 
+            margin-right: 40px;
+        }
     }
 }
 
@@ -443,16 +459,30 @@
                 width: 70%;
             }
         }
-        .arrow-down{
+        // .arrow-down{
+        //     position: absolute;
+        //     margin-left: 30px;
+        //     width: 95%;
+        //     top: 70%;
+        //     z-index: 10;
+        //     bottom: 110px !important;
+        //     img{
+        //         width: 20px;
+        //     } 
+        // }
+
+        .arrow{
+            font-family: BeirutText-Medium;
+            color: #FFFF96;
+            transform: rotate(90deg);
             position: absolute;
-            margin-left: 30px;
-            width: 95%;
-            top: 70%;
-            z-index: 10;
-            bottom: 110px !important;
+            left: -80px;
+            bottom: 125px;
+            z-index: 1;
+            cursor: pointer;
             img{
-                width: 20px;
-            } 
+                margin-right: 40px;
+            }
         }
     }
 
@@ -980,6 +1010,13 @@
                 }
             }
         }
+
+        .banner{
+            .arrow{
+                left: -76px;
+                bottom: 5px;
+            }
+        }
         
         .overlay{
             .overlay-content{
@@ -1118,7 +1155,7 @@
                 margin-right: auto;
             }
             .arrow{
-                left: -57px;
+                left: -68px;
                 font-size: 12px;
                 bottom: -10px;
                 img{

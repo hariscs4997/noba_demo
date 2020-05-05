@@ -468,6 +468,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     position: relative;
 }
 
@@ -763,12 +767,48 @@
             left: 370px;
         }
     }
+
+    .parallax{
+        height: auto;
+        .content{
+            padding-top: 100px;
+            padding-bottom: 230px;
+            p{
+                font-size: 20px;
+            }
+            .big-o{
+                top: -260px;
+            }
+        }
+    }
+    .parallax-image-2{
+        background-size: contain;
+        -webkit-background-size: contain;
+    }
+
+    .open{
+        padding-top: 215px;
+    }
 }
 
 @media screen and (max-device-width: 828px){
     .banner{
         .top-absolute{
             left: 250px;
+        }
+    }
+
+    .parallax{
+        height: auto;
+        .content{
+            padding-top: 70px;
+            padding-bottom: 230px;
+            p{
+                font-size: 14px;
+            }
+            .big-o{
+                top: -200px;
+            }
         }
     }
 }
@@ -827,6 +867,18 @@
     .banner{
         .top-absolute{
             left: 174px;
+        }
+    }
+
+    .parallax{
+        .content{
+            padding-top: 40px;
+            p{
+                font-size: 12px;
+            }
+            .big-o{
+                top: -160px;
+            }
         }
     }
 }
