@@ -96,7 +96,6 @@ export class PeopleComponent implements OnInit {
   }
 
   clickkar(){
-    
     this.videoShow=true;
     this.imgshow=false;
   }
