@@ -411,6 +411,14 @@
             width: 20px;
         } 
     }
+    .open-for-business{
+        transform: rotate(-90deg);
+        font-size: 20px;
+        position: absolute;
+        right: 0px;
+        bottom: 80px;
+        color: #fff;
+    }
 }
 .white-arrow{
     position: absolute;
@@ -467,11 +475,11 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
     position: relative;
 }
 
@@ -480,7 +488,7 @@
     position: relative;
     .content{
         padding-bottom: 40px;
-        padding-top: 50px;
+        padding-top: 150px;
         text-align: center;
         margin: auto;
         width: 55%;
@@ -757,9 +765,6 @@
     }
   }
 
-
-
-
  
   @media screen and (max-device-width: 1024px){
     .banner{
@@ -838,6 +843,13 @@
                 top: -190px;
             }
         }
+        .open-for-business{
+                font-size: 14px;
+                position: absolute;
+                right: -30px;
+                bottom: 70px;
+                color: #fff;
+        }
     }
 
     .wrapper{
@@ -853,12 +865,52 @@
             left: 160px;
         }
     }
+
+    .parallax{
+        .content{
+            padding-bottom: 170px;
+            padding-top: 40px;
+            p{
+                font-size: 11px;
+            }
+            .big-o{
+                top: -150px;
+            }
+        }
+        .open-for-business{
+                font-size: 14px;
+                position: absolute;
+                right: -30px;
+                bottom: 70px;
+                color: #fff;
+        }
+    }
 }
 
 @media screen and (max-device-width: 667px){
     .banner{
         .top-absolute{
             left: 160px;
+        }
+    }
+
+    .parallax{
+        .content{
+            padding-bottom: 170px;
+            padding-top: 40px;
+            p{
+                font-size: 11px;
+            }
+            .big-o{
+                top: -150px;
+            }
+        }
+        .open-for-business{
+                font-size: 14px;
+                position: absolute;
+                right: -30px;
+                bottom: 70px;
+                color: #fff;
         }
     }
 }
@@ -1017,6 +1069,14 @@
             .big-o{
                 top: -100px;
             }
+        }
+        .open-for-business{
+            transform: rotate(-90deg);
+            font-size: 12px;
+            position: absolute;
+            right: -20px;
+            bottom: 50px;
+            color: #fff;
         }
     }
 }
