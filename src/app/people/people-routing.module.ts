@@ -5,6 +5,7 @@ import { RegisterInterestComponent } from './register-interest/register-interest
 import { PeopleCookieFormComponent } from './people-cookie-form/people-cookie-form.component';
 import { WhatIsNobaComponent } from './what-is-noba/what-is-noba.component';
 import { TermAndConditionComponent } from './term-and-condition/term-and-condition.component';
+import { PrivacyNoticeComponent } from './privacy-notice/privacy-notice.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:"cookie-form",component:PeopleCookieFormComponent},
   {path: "what-is-noba" , component:WhatIsNobaComponent},
   {path: "Terms-and-condition", component:TermAndConditionComponent},
+  {path: "Privacy-Notice", component:PrivacyNoticeComponent},
 ];
 
 @NgModule({

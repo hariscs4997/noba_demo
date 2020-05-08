@@ -18,6 +18,7 @@ import { AngularFireMessagingModule } from '@angular/fire/messaging';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireFunctionsModule } from '@angular/fire/functions';
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PrivacyNoticeComponent } from './privacy-notice/privacy-notice.component';
 
 @NgModule({
   declarations: [PeopleComponent,
@@ -25,7 +26,8 @@ import {FormsModule, ReactiveFormsModule } from '@angular/forms';
     PeopleCookieFormComponent,
     HeaderComponent,
     WhatIsNobaComponent,
-    TermAndConditionComponent],
+    TermAndConditionComponent,
+    PrivacyNoticeComponent],
   imports: [
     CommonModule,
     PeopleRoutingModule,
