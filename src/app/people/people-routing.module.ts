@@ -10,7 +10,7 @@ import { PrivacyNoticeComponent } from './privacy-notice/privacy-notice.componen
 
 const routes: Routes = [
   {path:"",component:PeopleComponent},
-  {path:"register-interest",component:RegisterInterestComponent},
+  {path:"connect",component:RegisterInterestComponent},
   {path:"cookie-form",component:PeopleCookieFormComponent},
   {path: "what-is-noba" , component:WhatIsNobaComponent},
   {path: "Terms-and-condition", component:TermAndConditionComponent},
