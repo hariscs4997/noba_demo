@@ -991,7 +991,7 @@
         }
     }    
     
-    @media screen and (min-width: 500px) and (max-width: 768px) {
+    @media screen and (min-width: 554px) and (max-width: 768px) {
         .banner{
             .fixed{
                 img{
@@ -1007,6 +1007,82 @@
     }
 
 
+    
+    @media screen and (min-width: 530px) and (max-width: 553px) {
+        .banner{
+            .fixed{
+                img{
+                    margin-top: 15px;
+                    width: 400px;
+                }
+            }
+            .top-absolute{
+                left: 29%;
+                width: 105px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 510px) and (max-width: 529px) {
+        .banner{
+            .fixed{
+                img{
+                    margin-top: 15px;
+                    width: 400px;
+                }
+            }
+            .top-absolute{
+                left: 28%;
+                width: 105px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 501px) and (max-width: 509px) {
+        .banner{
+            .fixed{
+                img{
+                    margin-top: 15px;
+                    width: 400px;
+                }
+            }
+            .top-absolute{
+                left: 27.5%;
+                width: 104px;
+            }
+        }
+    }
+
+
+    @media screen and (min-width: 493px) and (max-width: 500px) {
+        .banner{
+            .fixed{
+                img{
+                    margin-top: 15px;
+                    width: 400px;
+                }
+            }
+            .top-absolute{
+                left: 130px;
+                width: 107px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 492px) and (max-width: 492px) {
+        .banner{
+            .fixed{
+                img{
+                    margin-top: 15px;
+                    width: 400px;
+                }
+            }
+            .top-absolute{
+                left: 127px;
+                width: 107px;
+            }
+        }
+    }
 
 
     @media screen and (max-device-width: 2500px){
