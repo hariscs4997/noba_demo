@@ -43,7 +43,7 @@
       </div>
     </div>
   </div>
-  <a class="arrow"><img src="../../../assets/images/arrow.png" />Our purpose</a>
+  <a class="arrow"><img src="../../../assets/images/arrow.png" />Our mission</a>
 </div>
 <!-- Slider Section -->
 <div id="slide1" #target class="carousel slide" data-ride="carousel">
@@ -60,7 +60,7 @@
     <div class="carousel-item active">
       <div class="slide-content">
         <h3>Welcome to a world without barriers</h3>
-        <p style="color:white !important">We're building a global community to create a new revolution in finance</p>
+        <p style="color: white;">We're building a global community to create a new revolution in finance</p>
         <div class="box">
           <a href="/" tabindex="0"><img src="/../../../assets/images/app-google-big.png"> </a>
           <a href="/" tabindex="0"><img src="/../../../assets/images/app-mac-big.png"> </a>
@@ -75,7 +75,7 @@
     <div class="carousel-item">
       <div class="slide-content">
         <h3>Powered by Generations</h3>
-        <p style="color:white !important">We're creating a new revolution in mobile payments</p>
+        <p style="color: white;">We're creating a new revolution in mobile payments</p>
         <div class="box">
           <a href="/" tabindex="0"><img src="/../../../assets/images/app-google-big.png"> </a>
           <a href="/" tabindex="0"><img src="/../../../assets/images/app-mac-big.png"> </a>
@@ -90,7 +90,7 @@
     <div class="carousel-item">
       <div class="slide-content">
         <h3>Shared experience</h3>
-        <p style="color:white !important">We're creating a new revolution in mobile payments</p>
+        <p style="color: white;">We're creating a new revolution in mobile payments</p>
         <div class="box">
           <a href="/" tabindex="0"><img src="/../../../assets/images/app-google-big.png"> </a>
           <a href="/" tabindex="0"><img src="/../../../assets/images/app-mac-big.png"> </a>
@@ -105,7 +105,7 @@
     <div class="carousel-item">
       <div class="slide-content">
         <h3>Free and Easy</h3>
-        <p style="color:white !important">We're creating a new revolution in mobile payments</p>
+        <p style="color: white;">We're creating a new revolution in mobile payments</p>
         <div class="box">
           <a href="/" tabindex="0"><img src="/../../../assets/images/app-google-big.png"> </a>
           <a href="/" tabindex="0"><img src="/../../../assets/images/app-mac-big.png"> </a>
@@ -118,7 +118,7 @@
       <img src="../../../assets/images/5.jpg" alt="New York">
     </div>
   </div>
-  <a class="slide-arow"><img src="../../../assets/images/arrow.png" />Our mission</a>
+  <!-- <a class="slide-arow"><img src="../../../assets/images/arrow.png" />Our mission</a> -->
 </div>
 <!-- parallax -->
 <div #slide class="parallax2">
@@ -149,9 +149,23 @@
           <p>Financial liberation</p>
         </div>
       </div>
+      <div class="col-lg-2 col-md-2 .hidden-sm-down .hidden-xs-down"></div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="icon">
+          <img class="w-100" src="../../../assets/images/sustain.svg" />
+          <p>Empowering sustainability</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="icon">
+          <img class="w-100" src="../../../assets/images/partnership.svg" />
+          <p>Lasting Partnership</p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 .hidden-sm-down .hidden-xs-down"></div>
     </div>
   </div>
-  <a class="arrow"><img src="../../../assets/images/arrow-green.png" />Our world</a>
+  <a class="arrow"><img src="../../../assets/images/light-green-arrow.png" />Our world</a>
 </div>
 <!-- What is Noba -->
 <!-- <div id="demo2" class="parallax image-0">
@@ -163,18 +177,21 @@
 
 <!-- Video Section -->
 <div class="video-section" #worldtarget id="worldtarget">
-  <div class="poster" *ngIf="imgshow">
-    <img src="../../../assets/images/art.svg" />
-  </div>
+  <!-- <div class="poster" *ngIf="imgshow">
+    <img src="../../../assets/images/art.png" />
+  </div> -->
   <div *ngIf="videoShow"> 
     <video  class="w-100" id="myVideo" autoplay>
       <source src="assets/video/PayAccessVideo.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
   </div>
+  <div class="container art">
+    <img src="../../../assets/images/art.png" />
+  </div>
   <h3 *ngIf="imgshow" class="video-content">So, what does our world look like?</h3> 
   <a (click)="clickkar()">   <img *ngIf="imgshow" class="video-overlay-play-button"  src="../../../assets/images/play.png" alt="Play video" /> </a> 
-  <a  class="arrow"><img src="../../../assets/images/arrow.png" />Our Services</a>
+  <a  class="arrow"><img src="../../../assets/images/arrow.png" />Services</a>
 </div>
 
 
@@ -185,28 +202,29 @@
 <!-- Noba 3 Section -->
 <div class="wrapper">
   <div class="row m-0">
-    <div style="border-bottom: 1px solid white;border-top:1px solid white" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding h-400 purple">
-      <div class="">
-        <img class="padding" src="../../../assets/images/connect.png" alt="Noba Connect">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding h-400 purple" style="border-top:1px solid white;border-bottom:1px solid white;">
+      <div class="noba-section">
+        <img class="padding" src="../../../assets/images/people-connect.png" alt="Noba Connect">
         <p class="padding w-100">Our Community</p>
       </div>
       <div class="bottom-right"> <a href="" class="btn btn-primary float-right b-0">Connect</a></div>
     </div>
-    <div style="border:1px solid white" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding h-400 green">
-      <div class="">
-        <img class="padding w-auto" src="../../../assets/images/pay.png" alt="Noba Pay">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding h-400 green" style="border:1px solid white">
+      <div class="noba-section">
+        <img class="padding" src="../../../assets/images/pay.png" alt="Noba Pay">
         <p class="padding w-100">Empowering Sustainability</p>
       </div>
       <div class="bottom-right"> <a href="https://nobaworld.threadless.com/mens/t-shirt/heavyweight" class="btn btn-primary float-right b-0">Take Control</a></div>
     </div>
-    <div style="border-bottom: 1px solid white;border-top:1px solid white" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding h-400 light-green">
-      <div class="">
-        <img class="padding" src="../../../assets/images/academy.png" alt="Noba Academy">
-        <p class="padding w-100">Discovery & Nurturing of Talent</p>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding h-400 light-green" style="border-top:1px solid white;border-bottom:1px solid white;">
+      <div class="noba-section">
+        <img class="padding" src="../../../assets/images/people-academy.png" alt="Noba Academy">
+        <p class="padding w-100">Discovery & Naturing of Talent</p>
       </div>
       <div class="bottom-right"> <a href="" class="btn btn-primary float-right b-0">Discover</a></div>
     </div>
   </div>
+  <a  class="arrow"><img src="../../../assets/images/arrow.png" />Latest news</a>
 </div> 
 
 <!-- <div class="parallax image-1">
@@ -280,6 +298,7 @@
       </div>
     </div>
   </div>
+  <a  class="arrow"><img src="../../../assets/images/arrow.png" />Testimonials</a>
 </div>
 <!-- Download App -->
 <div #app class="app">
@@ -291,7 +310,7 @@
       <input type="text" placeholder="07800 900000">
       <button type="submit">Text me the App</button>
     </form>
-    <p>Our<a routerLink="Privacy-Notice">Privacy Notice</a>sets out how the personal data collected from you will be processed
+    <p>Our<a routerLink="Privacy-Notice">Privacy Notice</a>sets out how the personal data collected from you wil be processed
       by us.</p>
   </div>
   <!-- <a (click)="scroll(footer)" class="arrow-green"><img src="../../../assets/images/arrow-green.png" />Go to footer</a> -->
@@ -301,7 +320,8 @@
 <footer #footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-md-4 footer-item">
+      <div class="col-sm-1 .hidden-sm-down .hidden-xs-down"></div>
+      <div class="col-sm-4 col-md-4 footer-item">
         <h4>Contact us</h4>
         <p>London (UK) Headquarters
           <br> DUDLEY HOUSE, 169 PICCADILLY
@@ -309,7 +329,7 @@
           <br> W1J 9EH
           <br> Tel: +44 (0) 333 242 7445</p>
       </div>
-      <div class="col-sm-6 col-md-4 footer-item">
+      <div class="col-sm-3 col-md-3 footer-item">
         <h4>Links<br></h4>
         <ul>
           <li><a href="#">Our world</a></li>
@@ -318,15 +338,16 @@
           <li><a href="#">News and Media</a></li>
         </ul>
       </div>
-      <div class="col-sm-6 col-md-4 footer-item">
+      <div class="col-sm-3 col-md-3 social-item">
         <h4>Follow us</h4>
-        <ul>
-          <li><a href="#"><img src="./../../../assets/images/linkedin.png"> Linkdin </a></li>
-          <li><a href="#"><img src="./../../../assets/images/twitter.png"> Twitter</a></li>
-          <li><a href="#"><img src="./../../../assets/images/facebook.png"> Facebook</a></li>
-          <li><a href="#"><img src="./../../../assets/images/instagram.png"> Instagram</a></li>
+        <ul class="social">
+          <li><a class="icon" href="#"><img src="./../../../assets/images/linkedin.png"> </a></li>
+          <li><a class="icon" href="#"><img src="./../../../assets/images/twitter.png"> </a></li>
+          <li><a class="icon" href="#"><img src="./../../../assets/images/facebook.png"> </a></li>
+          <li><a class="icon" href="#"><img src="./../../../assets/images/instagram.png"> </a></li>
         </ul>
       </div>
+      <div class="col-sm-1 .hidden-sm-down .hidden-xs-down"></div>
       <div class="col-12">
         <div class="copyright text-center fotter-end">Copyright 2017 - 2020 Noba Group Ltd</div>
       </div>

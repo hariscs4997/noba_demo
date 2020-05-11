@@ -37,13 +37,14 @@
                 <!-- <img id="scroll-up" class="fadeInDown animated absolute" src="../../../assets/images/yellow-bottom-anim.png" /> -->
               </div>
               <img id="scroll-down" class="fadeInDown animated top-absolute"
-                src="../../../assets/images/orange-top-anim.png" />
+                src="../../../assets/images/orange-top-o.png" />
 
             </div>
         </div>
     </div>
-    <a  class="arrow"><img src="../../../assets/images/arrow-orange.png" />Our purpose</a>
+    <a  class="arrow"><img src="../../../assets/images/arrow-orange.png" />Our mission  </a>
 </div>
+
 <!-- Slider Section -->
 <div id="demo" #mission class="carousel slide" data-interval="false" data-ride="carousel">
   <div class="slide-content">
@@ -65,8 +66,9 @@
         <img src="../../../assets/images/2.jpg" alt="Chicago">
       </div>
     </div>
-    <a  class="slide-arow"><img src="../../../assets/images/arrow.png" />Our mission</a>
+    <!-- <a  class="slide-arow"><img src="../../../assets/images/arrow.png" />Our mission</a> -->
 </div>
+
 <!-- parallax -->
 <div class="parallax" #slide>
   <div class="container">
@@ -85,7 +87,7 @@
       </div>
     </div>
   </div>
-  <a  class="slide-arow"><img src="../../../assets/images/arrow.png" />Our Services</a>
+  <a  class="slide-arow"><img src="../../../assets/images/arrow-dark.png" /> Our Services</a>
   <a  class="open-for-business">Open for business</a>
 </div>
 
@@ -95,7 +97,7 @@
       <div class="data">
         <p class="heading w-100">SPECIALIST ADVICE</p>
         <div class="img">
-          <img class="" src="../../../assets/images/noba-business.png" alt="Noba Connect">
+          <img class="" src="../../../assets/images/noba-academy.png" alt="Noba Connect">
           <p class="img-text">consult</p>
         </div>
         <div class="bottom-right"> <a href="" class="btn btn-primary float-right b-0">Let's talk</a></div>
@@ -115,7 +117,7 @@
       <div class="data">
         <p class="heading w-100">MATCHING TALENT TO SUSTAINABLE VALUE</p>
         <div class="img">
-          <img class="" src="../../../assets/images/noba-business.png" alt="Noba Connect">
+          <img class="" src="../../../assets/images/noba-consult.png" alt="Noba Connect">
           <p class="img-text brown">academy</p>
         </div>
         <div class="bottom-right"> <a href="" class="btn btn-primary float-right b-0">Join in</a></div>
@@ -129,14 +131,12 @@
     <p>Better all round </p>
     <img class="play-orange" src="./../../../assets/images/play-orange.png" />
   </div>
+  <a  class="news"><img src="../../../assets/images/arrow-orange.png" /> Lates news</a>
   <a  class="arrow"><img src="../../../assets/images/arrow-orange.png" />Consultancy</a>
   <!-- <div class="arrow-down white-arrow">
     <a  class="arrow"><img src="../../../assets/images/world-creamon-white.png" /></a>
   </div> -->
 </div>
-
-
-
 
 <div #open class="parallax-image-2"></div>
 <!-- <div class="container open">
@@ -150,6 +150,8 @@
     </div>
   </div>
 </div> -->
+
+<!-- Testimonials -->
 <div class="testimonials">
   <div class="container">
     <div class="row">
@@ -191,12 +193,15 @@
       </div>
     </div>
   </div>
+  <a  class="arrow"><img src="../../../assets/images/arrow-orange.png" />Testimonials</a>
 </div>
+
 <!-- Footer Section -->
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-md-4 footer-item">
+      <div class="col-sm-1 .hidden-sm-down .hidden-xs-down"></div>
+      <div class="col-sm-4 col-md-4 footer-item">
         <h4>Contact us</h4>
         <p>London (UK) Headquarters
           <br> DUDLEY HOUSE, 169 PICCADILLY
@@ -204,24 +209,26 @@
           <br> W1J 9EH
           <br> Tel: +44 (0) 333 242 7445</p>
       </div>
-      <div class="col-sm-6 col-md-4 footer-item">
+      <div class="col-sm-4 col-md-4 footer-item">
         <h4>Links<br></h4>
         <ul>
           <li><a href="#">Our world</a></li>
-          <li><a href="/for-people/Privacy-Notice">Privacy Notice</a></li>
+          <li><a routerLink="/for-people/Privacy-Notice">Privacy Notice</a></li>
           <!--<li><a href="#">Company announcements</a></li> -->
           <li><a href="#">News and Media</a></li>
         </ul>
       </div>
-      <div class="col-sm-6 col-md-4 footer-item">
+      <div class="col-sm-3 col-md-3 social-item">
         <h4>Follow us</h4>
-        <ul>
-          <li><a href="#"><img src="./../../../assets/images/linkedin.png"> Linkdin </a></li>
-          <li><a href="#"><img src="./../../../assets/images/twitter.png"> Twitter</a></li>
-          <li><a href="#"><img src="./../../../assets/images/facebook.png"> Facebook</a></li>
-          <li><a href="#"><img src="./../../../assets/images/instagram.png"> Instagram</a></li>
+        <ul class="social">
+          <li><a class="icon" href="#"><img src="./../../../assets/images/linkedin.png"> </a></li>
+          <li><a class="icon" href="#"><img src="./../../../assets/images/twitter.png"> </a></li>
+          <li><a class="icon" href="#"><img src="./../../../assets/images/facebook.png"> </a></li>
+          <li><a class="icon" href="#"><img src="./../../../assets/images/instagram.png"> </a></li>
         </ul>
       </div>
+      <div class="col-sm-1 .hidden-sm-down .hidden-xs-down"></div>
+
       <div class="col-12">
         <div class="copyright text-center fotter-end">Copyright  2017 - 2020  Noba Group Ltd</div>
       </div>
