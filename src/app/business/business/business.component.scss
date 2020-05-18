@@ -795,17 +795,69 @@
             left: 305px;
         }
     }
+
+    .parallax{
+        height: 650px;
+        .content{
+            padding-top: 70px;
+            p{
+                font-size: 20px;
+            }
+            .big-o{
+                top: -270px;
+            }
+        }
+    }
+
+    .wrapper{
+        .data{
+            padding: 40px 25px 0px 10px;
+            .img{
+                .img-text{
+                    font-size: 60px;
+                }
+            }
+        }
+    }
 }
 
-@media screen and (min-width: 769px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px){
     .banner{
         .top-absolute{
             left: 185px;
         }
     }
+
+    .parallax{
+        height: 480px;
+        .content{
+            padding-top: 70px;
+            p{
+                font-size: 14px;
+                padding-bottom: 125px;
+            }
+            .big-o{
+                top: -200px;
+            }
+        }
+    }
+
+    .wrapper{
+        .data{
+            padding: 40px 25px 0px 10px;
+            .img{
+                img{
+                    width: 120px;
+                }
+                .img-text{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
 }    
 
-@media screen and (min-width: 554px) and (max-width: 768px) {
+@media screen and (min-width: 554px) and (max-width: 767px) {
     .banner{
         .fixed{
             img{
@@ -901,10 +953,10 @@
         padding-bottom: 150px;
         padding-top: 40px;
         p{
-        font-size: 11px;
+        font-size: 10px;
         }
         .big-o{
-        top: -155px;
+        top: -136px;
         }
         }
         .open-for-business{
@@ -936,14 +988,14 @@
     }
     .parallax{
         .content{
-        padding-bottom: 150px;
-        padding-top: 40px;
-        p{
-        font-size: 11px;
-        }
-        .big-o{
-        top: -155px;
-        }
+            padding-bottom: 150px;
+            padding-top: 40px;
+            p{
+            font-size: 9px;
+            }
+            .big-o{
+            top: -136px;
+            }
         }
         .open-for-business{
         right: -30px;
@@ -951,11 +1003,11 @@
         }
         
         .parallax-image{
-        .content{
-        p{
-        left: 20%;
-        }
-        }
+            .content{
+                p{
+                left: 20%;
+                }
+            }
         }
 }
 
@@ -978,10 +1030,10 @@
         padding-bottom: 150px;
         padding-top: 40px;
         p{
-        font-size: 11px;
+        font-size: 9px;
         }
         .big-o{
-        top: -155px;
+        top: -136px;
         }
         }
         .open-for-business{
