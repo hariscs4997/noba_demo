@@ -108,7 +108,7 @@
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 768px) { 
+@media screen and (min-width: 300px) and (max-width: 767px) { 
         
     .header{
         padding: 12px 15px 0px 0px;
@@ -117,6 +117,35 @@
             a{
                 padding: 10px 6px;
                 font-size: 10px;
+            }
+        }
+    }
+
+    .overlay{
+        .overlay-content{
+            li{
+                a{
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+        
+    .header{
+        padding: 12px 15px 0px 0px;
+        .navbar{
+            padding: 9px 1px;
+            a{
+                padding: 10px 6px;
+                font-size: 14px;
+            }
+            .logo {
+                img{
+                    width: 20px;
+                }
             }
         }
     }

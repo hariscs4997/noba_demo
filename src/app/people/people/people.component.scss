@@ -16,6 +16,10 @@
     font-family: f37ginger-bold;
     src: url(../../../assets/fonts/f37ginger-bold.ttf);
   }
+  @font-face {
+    font-family: GTWalsheimProBoldRegular;
+    src: url(../../../assets/fonts/GTWalsheimProBoldRegular.ttf);
+  }
 
 .no-padding{
     padding: 0px;
@@ -384,7 +388,7 @@
         text-align: center;
         color: #086262;
         font-size: 18px;
-        padding: 50px 50px 50px;
+        padding: 50px 5px 50px;
       img{
           margin-bottom: 30px;
           width:160px;
@@ -511,28 +515,90 @@
             width: 100%;
             position: absolute;
         }
-        p{
-            font-family: BeirutText-Book;
-            color: #ffff95; 
-            position: absolute;
-            top: 150px;
+
+        .data{
+            padding: 40px 25px 0px 50px;
+            .heading{
+                font-family: ApercuBold;
+                letter-spacing: 1px;
+                color: #ffff95;
+                font-size: 16px;
+            }
+            .img{
+                padding-left: 20px;
+                .img-text{
+                    font-family: GTWalsheimProBoldRegular;
+                    line-height: 1;
+                    color: #becba5;
+                    font-size: 60px;
+                    margin-left: -5px;
+                    margin-top: -3px;
+                    margin-bottom: 6px;
+                }
+                .img-shop{
+                    font-family: GTWalsheimProBoldRegular;
+                    line-height: 0.7;
+                    color: #bfcd75;
+                    font-size: 60px;
+                }
+                .img-academy{
+                    font-family: GTWalsheimProBoldRegular;
+                    line-height: 0.7;
+                    color: #afd289;
+                    font-size: 60px;
+                }
+                .purple{
+                    background-color: #5b7cbb;
+                }
+                .green{
+                    background-color: #5e8042;
+                }
+                .light-green{
+                    background-color: #358d74;
+                }
+            }
+            .btn-primary {
+                color: #ffffff!important;
+                background-color: #007bff00!important;
+                border-color: #ffffff!important;
+                border-width: 1px!important;
+                width: 205px!important;
+                height: 33px!important;
+                line-height: 20px!important;
+            }
+            
         }
-        a{
-            font-family: BeirutText-Medium;
-            font-size: 16px;
-        }
-        .padding{
-            padding: 1.5rem;
-        }
-        .btn-primary {
-            color: #fff!important;
-            background-color: #007bff00!important;
-            border-color: #ffffff!important;
-            border-width: 1px!important;
-            width: 205px!important;
-            height: 33px!important;
-            line-height: 20px!important;
-        }
+
+
+
+
+
+
+
+
+        // p{
+        //     font-family: BeirutText-Book;
+        //     color: #ffff95; 
+        //     position: absolute;
+        //     top: 150px;
+        // }
+        // a{
+        //     font-family: BeirutText-Medium;
+        //     font-size: 16px;
+        // }
+        // .padding{
+        //     padding: 1.5rem;
+        // }
+        
+        // .btn-primary {
+        //     color: #fff!important;
+        //     background-color: #007bff00!important;
+        //     border-color: #ffffff!important;
+        //     border-width: 1px!important;
+        //     width: 205px!important;
+        //     height: 33px!important;
+        //     line-height: 20px!important;
+        // }
         .arrow{
             font-family: BeirutText-Regular;
             color: #FFFF96;
@@ -958,7 +1024,7 @@
 
                         padding: 10px 12px;
                         background: #075555;
-                        margin: 6px;
+                        margin: 5px;
                         border-radius: 6px;
                         img{
                             width: 25px;
@@ -982,21 +1048,59 @@
                 left: 305px;
             }
         }
+
+        .wrapper{
+            .data{
+                padding: 40px 25px 0px 0px;
+            }
+        }
     }
 
-    @media screen and (min-width: 769px) and (max-width: 991px){
+    @media screen and (min-width: 768px) and (max-width: 991px){
+
         .banner{
+            .fixed{
+                img{
+                    margin-top: 14px;
+                    max-width: 400px;
+                }
+            }
             .top-absolute{
-                left: 185px;
+                left: 250px;
+                width: 103px;
+            }
+        }
+        // .banner{
+        //     .top-absolute{
+        //         left: 185px;
+        //     }
+        // }
+        .wrapper{
+            .data{
+                padding: 40px 25px 0px 0px;
+                .img{
+                    img{
+                        width: 120px;
+                    }
+                    .img-text{
+                        font-size: 50px;
+                    }
+                    .img-shop{
+                        font-size: 50px;
+                    }
+                    .img-academy{
+                        font-size: 50px;
+                    }
+                }
             }
         }
     }    
     
-    @media screen and (min-width: 554px) and (max-width: 768px) {
+    @media screen and (min-width: 554px) and (max-width: 767px) {
         .banner{
             .fixed{
                 img{
-                    margin-top: 15px;
+                    margin-top: 17px;
                     width: 400px;
                 }
             }
@@ -1005,6 +1109,7 @@
                 width: 102px;
             }
         }
+
     }
 
 
@@ -1150,6 +1255,12 @@
                
             }
         }
+
+        .wrapper{
+            .data{
+                padding: 40px 25px 0px 0px;
+            }
+        }
     }
 
     @media screen and (max-device-width: 828px){
@@ -1240,6 +1351,17 @@
                 left: 202px;
             }
         }
+
+        .wrapper{
+            .data{
+                .img{
+                    padding-left: 40px;
+                    img{
+                        width: auto;
+                    }   
+                }
+            }
+        }
     }
 
     @media screen and (max-device-width: 480px){
@@ -1302,7 +1424,7 @@
 
         .wrapper{
             img{
-                width: 100%;
+                width: auto;
             }
         }
 
@@ -1347,6 +1469,17 @@
             }
         }
 
+        .wrapper{
+            .data{
+                .img{
+                    padding-left: 40px;
+                    img{
+                        width: auto;
+                    }   
+                }
+            }
+        }
+
         .testimonials{
 
             .carousel{
@@ -1375,6 +1508,17 @@
                 left: 123px;
             }
         }
+
+        .wrapper{
+            .data{
+                .img{
+                    padding-left: 40px;
+                    img{
+                        width: auto;
+                    }   
+                }
+            }
+        }
     }
 
     @media screen and (max-device-width: 375px){
@@ -1391,10 +1535,12 @@
         }
 
         .wrapper{
-            .noba-section{
-                img{
-                    width: auto;
-                    padding: 40px;
+            .data{
+                .img{
+                    padding-left: 40px;
+                    img{
+                        width: auto;
+                    }   
                 }
             }
         }
@@ -1419,9 +1565,11 @@
         }
 
         .wrapper{
-            .noba-section{
-                img{
-                    width: 100%;
+            .data{
+                .img{
+                    img{
+                        width: auto;
+                    }   
                 }
             }
         }
@@ -1450,7 +1598,7 @@
             }
 
             .arrow{
-                left: -80px;
+                left: -70px;
             }
         }
 
