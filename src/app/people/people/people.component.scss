@@ -1263,6 +1263,21 @@
         }
     }
 
+    @media screen and (max-device-width: 991px){
+        .banner{
+            .fixed{
+                img{
+                    margin-top: -8px;
+                    width: 300px;
+                }
+            }
+            .top-absolute{
+                left: 278px;
+                width: 77px;
+            }
+        }
+    }
+
     @media screen and (max-device-width: 828px){
         .banner{
             .fixed{
@@ -1290,7 +1305,7 @@
         .banner{
             .fixed{
                 img{
-                    margin-top: -2px;
+                    margin-top: -6px;
                     max-width: 400px;
                 }
             }
@@ -1305,6 +1320,21 @@
                 img{
                     width: 100%;
                 }
+            }
+        }
+    }
+
+    @media screen and (max-device-width: 767px){
+        .banner{
+            .fixed{
+                img{
+                    margin-top: -2px;
+                    width: 300px;
+                }
+            }
+            .top-absolute{
+                left: 188px;
+                width: 77px;
             }
         }
     }
