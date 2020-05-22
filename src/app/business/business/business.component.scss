@@ -1495,6 +1495,14 @@
         }
         
     }
+
+    .parallax-image-2{
+        background-attachment:scroll !important;
+        background-color: #fff;
+        background-size: contain;
+        height: 100%;
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-device-width: 767px){
