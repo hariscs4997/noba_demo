@@ -690,14 +690,10 @@
         display: flex;
         height: 600px;
         /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        -webkit-background-size: cover;
+        background-size: cover !important;
+        -webkit-background-size: cover !important;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
         .content{
             padding-bottom: 40px;
             padding-top: 50px;
@@ -763,7 +759,7 @@
         position: relative;
     }
     .image-5{
-        background-image: url('../../../assets/images/peoples.jpg');
+        background: url('../../../assets/images/peoples.jpg') top center no-repeat fixed;
         position: relative;
     }
 
@@ -1042,7 +1038,7 @@
 
 
 
-    @media screen and (min-width: 992px) and (max-width: 1199px){
+    @media screen and (min-width: 992px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio:0){
         .banner{
             .top-absolute{
                 left: 305px;
@@ -1056,7 +1052,7 @@
         }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 991px){
+    @media screen and (min-width: 768px) and (max-width: 991px) and (-webkit-min-device-pixel-ratio:0){
 
         .banner{
             .fixed{
