@@ -393,7 +393,6 @@
                 color: #e73e40;
                 font-size: 70px;
                 margin-left: -5px;
-                margin-top: -6px;
             }
             .red{
                 color: #ff1436;
@@ -1494,6 +1493,13 @@
             
         }
         
+    }
+
+    .parallax-image-2{
+        background-attachment:scroll !important;
+        background-size: contain;
+        height: 100%;
+        overflow: hidden;
     }
 
     .parallax-image-2{
