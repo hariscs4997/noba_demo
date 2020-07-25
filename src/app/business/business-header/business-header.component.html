@@ -1,6 +1,6 @@
 <ul class="overlay" [@slideInOut]="menuState">
-    <img class="o-top-small" (click)="toggleOut()" src="../../../assets/images/o-top-small.svg"/>
-    <img class="o-bottom-small" [ngClass] = "position" (click)="toggleOut()" src="../../../assets/images/o-bottom-small.svg"/>
+    <img class="o-top-small" (click)="toggleOut()" src="../../../assets/images/o-top-small-orange.svg"/>
+    <img class="o-bottom-small" [ngClass] = "position" (click)="toggleOut()" src="../../../assets/images/o-bottom-small-orange.svg"/>
     <div class="overlay-content">
       <li><a id="home" routerLink = "{{nav.home}}"> <span></span>Home </a></li>
       <li><a id="noba" routerLink = "{{nav.what_is_noba}}"> <span></span>What is Noba </a></li>
@@ -16,9 +16,10 @@
       <div class="text-left">
         <a class="fadeInDown animated" routerLink="{{nav.home}}">For People</a>
         <a class="fadeInDown animated" routerLink="{{nav.business}}">For Business</a>
-        <a class="fadeInDown animated" routerLink="{{nav.business_login}}">Business Login</a>
+        <!-- <a class="fadeInDown animated" routerLink="{{nav.business_login}}">Business Login</a> -->
       </div>
-      <div class="text-right fadeInDown animated">
+      <div class="text-right fadeInDown animated d-flex">
+        <a class="fadeInDown animated" routerLink="{{nav.business_login}}">Login</a>
         <a class="logo" (click)="toggleIn()"><img class="fadeInDown animated" src="../../../assets/images/logo-orange.svg"
             alt="logo" /></a>
         <!-- <mat-icon (click)="toggleOut()"><img src="../../../assets/images/logo.svg" alt="logo"/></mat-icon> -->

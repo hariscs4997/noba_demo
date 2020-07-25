@@ -196,18 +196,28 @@
     .fixed{
         height: calc(100vh - 150px);
         position: fixed;
+        width: 100%;
         top: 50px;
         left: 0;
-        width: 100%;
-        
         /* this is what centers your element in the fixed wrapper*/
-        display: flex;
         flex-flow: column nowrap;
         justify-content: center; /* aligns on vertical for column */
         align-items: center; /* aligns on horizontal for column */
-        img{
-            margin-top: 60px;
-            max-width: 640px;
+        display: flex;
+        .banner-img{
+            position: relative;
+            width: 640px;
+            .logo-bottom-part{
+                width: 100%;
+            }
+            .top-absolute{
+                position: absolute;
+                transition: 1s;
+                width: 164px;
+                left: 145px;
+                top: 39px;
+                right: 0;
+            }
         }
     }
     
@@ -450,6 +460,8 @@
         }
     }
   }
+
+
   .icon{
         font-family: BeirutText-Medium;
         text-align: center;
@@ -511,14 +523,14 @@
         padding-top: 80px;
         text-align: center;
         margin: auto;
-        width: 55%;
+        width: 100%;
         p{
             font-family: BeirutText-Book;
             font-size: 44px;
             color: #fff;
             position: absolute;
             top: 47%;
-            left: 40%;
+            width: 100%;
         }
         a {
             color: #fff!important;
@@ -578,6 +590,7 @@
     background-size: contain;
     position: relative;
 }
+
 
 .open{
     background-color: #fff;
@@ -695,6 +708,19 @@
         bottom: -40px;
     }
     
+    .icon-top{
+        position: absolute;
+        width: 130px;
+        left: 50px;
+        top: 10px;
+    }
+    .icon-bottom{
+        transform: rotate(180deg);
+        position: absolute;
+        width: 130px;
+        right: 50px;
+        bottom: 10px;
+    }
 
     .arrow{
         font-family: BeirutText-Medium;
@@ -760,6 +786,7 @@
 
     .social-item{
         .social{
+            justify-content: center;
             padding-left: 0px;
             display: flex;
             li{
@@ -859,19 +886,26 @@
 @media screen and (min-width: 554px) and (max-width: 767px) {
     .banner{
         .fixed{
-            img{
-                margin-top: 15px;
-                width: 400px;
+            .banner-img{
+                position: relative;
+                width: 290px;
+                .logo-bottom-part{
+                    margin-top: 19px;
+                    width: 100%;
+                }
+                .top-absolute{
+                    position: absolute;
+                    top: 39px;
+                    left: 65px;
+                    right: 0;
+                    width: 75px;
+                    transition: 1s;
+                }
             }
-        }
-        .top-absolute{
-            left: 160px;
-            width: 102px;
         }
     }
     .parallax{
         .content{
-            padding-bottom: 150px;
             padding-top: 40px;
             p{
                 font-size: 11px;
@@ -888,7 +922,7 @@
     .parallax-image{
         .content{
             p{
-                left: 20%;
+                
             }
         }
     }
@@ -897,18 +931,8 @@
 
 
 @media screen and (min-width: 530px) and (max-width: 553px) {
-    .banner{
-        .fixed{
-            img{
-                margin-top: 15px;
-                width: 400px;
-            }
-        }
-        .top-absolute{
-            left: 29%;
-            width: 105px;
-        }
-    }
+    
+
     .parallax{
         .content{
         padding-bottom: 150px;
@@ -925,28 +949,12 @@
         }
         }
         
-        .parallax-image{
-        .content{
-        p{
-        left: 20%;
-        }
-        }
-        }
+        
 }
 
 @media screen and (min-width: 510px) and (max-width: 529px) {
-    .banner{
-        .fixed{
-            img{
-                margin-top: 15px;
-                width: 400px;
-            }
-        }
-        .top-absolute{
-            left: 28%;
-            width: 105px;
-        }
-    }
+    
+
     .parallax{
         .content{
         padding-bottom: 150px;
@@ -963,28 +971,12 @@
         }
         }
         
-        .parallax-image{
-        .content{
-        p{
-        left: 20%;
-        }
-        }
-        }
+        
 }
 
 @media screen and (min-width: 501px) and (max-width: 509px) {
-    .banner{
-        .fixed{
-            img{
-                margin-top: 15px;
-                width: 400px;
-            }
-        }
-        .top-absolute{
-            left: 27.5%;
-            width: 104px;
-        }
-    }
+    
+    
     .parallax{
         .content{
             padding-bottom: 150px;
@@ -1001,29 +993,12 @@
         }
         }
         
-        .parallax-image{
-            .content{
-                p{
-                left: 20%;
-                }
-            }
-        }
+       
 }
 
 
 @media screen and (min-width: 493px) and (max-width: 500px) {
-    .banner{
-        .fixed{
-            img{
-                margin-top: 15px;
-                width: 400px;
-            }
-        }
-        .top-absolute{
-            left: 130px;
-            width: 107px;
-        }
-    }
+    
     .parallax{
         .content{
         padding-bottom: 150px;
@@ -1040,13 +1015,7 @@
         }
         }
         
-        .parallax-image{
-        .content{
-        p{
-        left: 20%;
-        }
-        }
-        }
+        
 }
 
 @media screen and (min-width: 492px) and (max-width: 492px) {
@@ -1078,13 +1047,7 @@
         }
         }
         
-        .parallax-image{
-        .content{
-        p{
-        left: 20%;
-        }
-        }
-        }
+        
 }
 
 
@@ -1239,7 +1202,7 @@
     }
 
     .parallax{
-        height: auto;
+        height: 350px;
         .content{
             .big-o{
             }
@@ -1292,9 +1255,21 @@
         }
     }
 
-    .parallax-image-2{
-        background-size: contain;
+    .parallax-image{
+        background-attachment: scroll;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
     }
+
+    .parallax-image-2{
+        background-attachment: local;
+        background-color: #fff;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+    }
+
     .open{
         .content{
             width: 100%;
@@ -1322,10 +1297,9 @@
     }
 
     .parallax{
-        height: auto;
+        height: 580px;
         .content{
             padding-top: 100px;
-            padding-bottom: 230px;
             p{
                 font-size: 20px;
             }
@@ -1336,13 +1310,7 @@
     }
 
 
-    .parallax-image{
-        .content{
-            p{
-                left: 33%;
-            }
-        }
-    }
+    
 
     .parallax-image-2{
         background-size: contain;
@@ -1403,7 +1371,6 @@
         height: auto;
         .content{
             padding-top: 70px;
-            padding-bottom: 230px;
             p{
                 font-size: 14px;
             }
@@ -1413,13 +1380,6 @@
         }
     }
 
-    .parallax-image{
-        .content{
-            p{
-                left: 29%;
-            }
-        }
-    }
 
     .wrapper{
         .data{
@@ -1454,7 +1414,6 @@
 
     .parallax{
         .content{
-            padding-bottom: 170px;
             padding-top: 75px;
             p{
                 font-size: 15px;
@@ -1472,13 +1431,7 @@
         }
     }
 
-    .parallax-image{
-        .content{
-            p{
-                left: 26%;
-            }
-        }
-    }
+    
 
     .wrapper{
         .data{
@@ -1495,16 +1448,26 @@
         
     }
 
+    // .parallax-image{
+    //     background-attachment:scroll !important;
+    //     background-color: #fff;
+    //     background-size: contain;
+    //     overflow: hidden;
+    //     height: 100%;
+    // }
+
     .parallax-image-2{
-        background-attachment:scroll !important;
+        background-attachment: scroll !important;
+        -webkit-overflow-scrolling: touch;
+        background-color: #fff;
         background-size: contain;
-        height: 100%;
         overflow: hidden;
+        height: 100%;
     }
 
     .parallax-image-2{
-        background-attachment:scroll !important;
-        background-color: #fff;
+        background-attachment: initial !important;
+        -webkit-overflow-scrolling: touch;
         background-size: contain;
         height: 100%;
         overflow: hidden;
@@ -1524,18 +1487,42 @@
             width: 77px;
         }
     }
+
+    .testimonials{
+        .icon-top{
+            width: 50px;
+        }
+        .icon-bottom{
+            width: 50px;
+        }
+    }
 }
 
 @media screen and (max-device-width: 736px){
     .banner{
-        .top-absolute{
-            left: 188px;
+        .fixed{
+            .banner-img{
+                position: relative;
+                width: 290px;
+                .logo-bottom-part{
+                    margin-top: 19px;
+                    width: 100%;
+                }
+                .top-absolute{
+                    position: absolute;
+                    top: 39px;
+                    left: 65px;
+                    right: 0;
+                    width: 75px;
+                    transition: 1s;
+                }
+            }
         }
     }
 
     .parallax{
+        height: 350px;
         .content{
-            padding-bottom: 170px;
             padding-top: 40px;
             p{
                 font-size: 11px;
@@ -1577,13 +1564,12 @@
             }
         }
         .top-absolute{
-            left: 187px;
+            left: 188px;
         }
     }
 
     .parallax{
         .content{
-            padding-bottom: 170px;
             padding-top: 40px;
             p{
                 font-size: 11px;
@@ -1601,6 +1587,8 @@
         }
     }
 }
+
+
 
 @media screen and (max-device-width: 568px){
     .banner{
@@ -1625,7 +1613,7 @@
 @media screen and (max-device-width: 480px){
     .banner{
         .top-absolute{
-            left: 130px;
+            left: 153px;
         }
 
         .arrow{
@@ -1669,6 +1657,7 @@
     }
 
     .parallax{
+        height: 260px;
         .content{
             padding-bottom: 100px;
             padding-top: 25px;
@@ -1702,17 +1691,13 @@
 
 @media screen and (max-device-width: 414px){
     .banner{
-        // height: calc(100vh - 300px);
         .fixed{
-            // height: calc(100vh - 300px);
-            img{
-                margin-top: -10px;
-                width: 250px;
+            .banner-img{
+                .logo-bottom-part{
+                    margin-top: 11px;
+                }
+                
             }
-        }
-        .top-absolute{
-            left: 138px;
-            width: 65px;
         }
     }
 
@@ -1733,7 +1718,6 @@
         .content{
             p{
                 top: 50%;
-                left: 23%;
                 font-size: 25px;
             }
             .play-orange{
@@ -1755,7 +1739,6 @@
         .content{
             p{
                 top: 50%;
-                left: 20%;
                 font-size: 25px;
             }
             .play-orange{
@@ -1773,6 +1756,7 @@
     }
 
     .parallax{
+        height: 230px;
         .content{
             padding-bottom: 90px;
             padding-top: 25px;
@@ -1790,7 +1774,6 @@
         .content{
             p{
                 top: 50%;
-                left: 20%;
                 font-size: 25px;
             }
             .play-orange{
@@ -1838,6 +1821,7 @@
     }
 
     .parallax{
+        height: 200px;
         .content{
             padding-bottom: 70px;
             padding-top: 10px;
@@ -1863,7 +1847,6 @@
         .content{
             p{
                 top: 50%;
-                left: 20%;
                 font-size: 25px;
             }
             .play-orange{
@@ -1879,68 +1862,6 @@
         }
     }
 }
-
-
-// @media screen and (max-width: 768px) { 
-
-//     .modal{
-//         .modal-body{
-//             .cookies{
-//                 top: 30%;
-//                 .cookie-left{
-//                     p{
-//                         max-width: 100%;
-//                     }
-//                 }
-//                 .cookie-right{
-//                     margin-top: 30px;
-//                 }
-//             }
-//         }
-//     }
-
-//     .header{
-//         padding: 12px 15px 0px 0px;
-//         .navbar{
-//             padding: 10px 1px;
-//             a{
-//                 padding: 10px 6px;
-//                 font-size: 14px;
-//             }
-//         }
-//     }
-
-
-//     .slider{
-//         height: auto;
-//         .slide-content{
-//             h3{
-//                 font-size: 30px;
-//             }
-//             p{
-//                 font-size: 14px;
-//             }
-//         }
-//     }
-
-//     .wrapper{
-//         .h-400{
-//             img{
-//                 width: 100%;
-//             }
-//         }
-//     }
-
-
-//     .parallax2{
-//         .icon{
-//             padding: 50px 20px 50px;
-//             p{
-//                 font-size: 15px;
-//             }
-//         }
-//     }
-// }
 
 
 

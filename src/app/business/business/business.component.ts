@@ -47,7 +47,7 @@ export class BusinessComponent implements OnInit {
     $(window).scroll(function() {
       var scrollTop= $(window).scrollTop();
       if(scrollTop == 0){
-        $("#scroll-down").css('top','-36px');
+        $("#scroll-down").css('top','39px');
       }
       else{
         $("#scroll-down").css('top',-scrollTop+'px');
