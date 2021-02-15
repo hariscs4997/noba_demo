@@ -32,8 +32,12 @@ export class RegisterInterestComponent implements OnInit {
   nav = {
     home : '/',
     what_is_noba: '../what-is-noba',
-    register_interest:'../register-interest',
-    business:'../../for-business'
+       register_interest:'../register-interest',
+       business:'../../for-business',
+       app_route:'../app',
+       connect:'../service'
+
+
   }
   registrationform = new FormGroup({
     Title        : new FormControl('',[Validators.required]),
@@ -41,8 +45,10 @@ export class RegisterInterestComponent implements OnInit {
     Lastname        : new FormControl('',[Validators.required]),
     email        : new FormControl('',[Validators.required,Validators.email,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
     Phone        : new FormControl('',[Validators.required]),
-    interest_people       : new FormControl(''),
-    interest_business       : new FormControl(''),
+    app       : new FormControl(''),
+    service       : new FormControl(''),
+    consulting : new FormControl(''),
+    work_with_us : new FormControl(''),
     help        : new FormControl('',[Validators.required]),
     country        : new FormControl('',[Validators.required])
   });
@@ -61,11 +67,17 @@ save(){
 }
 onSubmit(){
   this.submitted = true;
-  if((<HTMLInputElement>document.querySelector('#people')).checked==false){
-    this.registration.Interest_People = false;
+  if((<HTMLInputElement>document.querySelector('#app')).checked==false){
+    this.registration.app = false;
   }
-  if((<HTMLInputElement>document.querySelector('#business')).checked==false){
-    this.registration.Interest_Business= false;
+  if((<HTMLInputElement>document.querySelector('#service')).checked==false){
+    this.registration.service = false;
+  }
+  if((<HTMLInputElement>document.querySelector('#consulting')).checked==false){
+    this.registration.consulting= false;
+  }
+  if((<HTMLInputElement>document.querySelector('#work_with_us')).checked==false){
+    this.registration.work_with_us= false;
   }
   this.save();
   this.toastr.success('Thank you for Registering.');

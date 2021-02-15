@@ -19,7 +19,11 @@ export class PeopleComponent implements OnInit {
     home : '/',
     what_is_noba: './what-is-noba',
     register_interest:'./register-interest',
-    business:'../for-business'
+    business:'../for-business',
+    app_route:'./app',
+    connect:'./service'
+
+
   }
   videoShow: boolean=false;
   imgshow: boolean=true;
@@ -52,27 +56,37 @@ export class PeopleComponent implements OnInit {
 
 
     $(window).scroll(function() {
-      var scrollTop= $(window).scrollTop();
-      if(scrollTop == 0){
-        $("#scroll-down").css('top','39px');
-      }
-      else{
-        $("#scroll-down").css('top',-scrollTop+'px');
-      }
+      // var scrollTop= $(window).scrollTop();
+      // if(scrollTop == 0){
+      //   $("#scroll-down").css('top','39px');
+      // }
+      // else{
+      //   $("#scroll-down").css('top',-scrollTop+'px');
+      // }
+
+      
+
       // if ( $(window).scrollTop() >= scrollTop ) {
           
       // } else {
       //     $("#scroll-down").removeClass("top1");
       // }
-  });
-  
-  // $(window).scroll(function() {    
-  //     if ($(window).scrollTop() >= 150) {
-  //         $("#scroll-down").addClass("top2");
-  //     } else {
-  //         $("#scroll-down").removeClass("top2");
-  //     }
-  // });
+      
+    });
+    
+    $(window).scroll(function() {  
+      var scrollTop= $(window).scrollTop();
+        
+        if ($(window).scrollTop() >= 10 || $(window).scrollTop() <= 20) {
+            $("#scroll-down").removeClass('top-absolute');
+            $("#scroll-down").addClass('scroll-down');
+        }
+        if($(window).scrollTop() < 10){
+          $("#scroll-down").removeClass('scroll-down');
+          $("#scroll-down").addClass('top-absolute');
+        }
+        
+    });
      
   }
 
@@ -87,6 +101,7 @@ export class PeopleComponent implements OnInit {
   
  
   ngOnInit() {
+    $("#scroll-down").removeClass('scroll-down');
     if(this.cookie.get("userid")){
 
    } 

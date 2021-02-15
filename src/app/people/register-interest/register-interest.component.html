@@ -36,10 +36,16 @@
                     <div class="form-group">
                         <div class="w-100 text-left mt-5 interest">Interest</div>
                         <div class="w-100 mt-2 pl-4">
-                            <input class="form-check-input" type="checkbox" id="people"  formControlName="interest_people" [(ngModel)]='registration.Interest_People'> For people product and services
+                            <input class="form-check-input" type="checkbox" id="app"  formControlName="app" [(ngModel)]='registration.app'> Noba Mobile App Services
                         </div>
                         <div class="w-100 mt-2 pl-4">
-                            <input class="form-check-input" type="checkbox" id="business"  formControlName="interest_business" [(ngModel)]='registration.Interest_Business'> For business product and services
+                            <input class="form-check-input" type="checkbox" id="service"  formControlName="service" [(ngModel)]='registration.service'> Noba Academy Services
+                        </div>
+                        <div class="w-100 mt-2 pl-4">
+                            <input class="form-check-input" type="checkbox" id="consulting" formControlName="consulting" [(ngModel)]='registration.consulting'> Consulting Services
+                        </div>
+                        <div class="w-100 mt-2 pl-4">
+                            <input class="form-check-input" type="checkbox" id="work_with_us" formControlName="work_with_us" [(ngModel)]='registration.work_with_us'> Working with us
                         </div>
                     </div>
                 </div>
@@ -64,8 +70,9 @@
 
 
                 <div class="col-lg-12 text-center mt-5">
-                <button class="btn btn-success" (click)="newRegister" [disabled] = "!registrationform.valid">Contact Us</button>
-                </div>
+                <button class="btn btn-success btn-lg" (click)="newRegister" [disabled] = "!registrationform.valid">Contact Us</button>
+                <br><br>  
+            </div>
             </form>
         </div>
     </div>

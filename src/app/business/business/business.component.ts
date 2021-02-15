@@ -44,15 +44,20 @@ export class BusinessComponent implements OnInit {
       
     // }
 
-    $(window).scroll(function() {
+    $(window).scroll(function() {  
       var scrollTop= $(window).scrollTop();
-      if(scrollTop == 0){
-        $("#scroll-down").css('top','39px');
-      }
-      else{
-        $("#scroll-down").css('top',-scrollTop+'px');
-      }
-  });
+      console.log(scrollTop);
+        
+        if ($(window).scrollTop() >= 10 || $(window).scrollTop() <= 20) {
+            $("#scroll-down").removeClass('top-absolute');
+            $("#scroll-down").addClass('scroll-down');
+        }
+        if($(window).scrollTop() < 10){
+          $("#scroll-down").removeClass('scroll-down');
+          $("#scroll-down").addClass('top-absolute');
+        }
+        
+    });
      
   }
 

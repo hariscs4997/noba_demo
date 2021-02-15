@@ -2,13 +2,12 @@
     <img class="o-top-small" (click)="toggleOut()" src="../../../assets/images/o-top-small-orange.svg"/>
     <img class="o-bottom-small" [ngClass] = "position" (click)="toggleOut()" src="../../../assets/images/o-bottom-small-orange.svg"/>
     <div class="overlay-content">
-      <li><a id="home" routerLink = "{{nav.home}}"> <span></span>Home </a></li>
-      <li><a id="noba" routerLink = "{{nav.what_is_noba}}"> <span></span>What is Noba </a></li>
-      <li><a id="app" routerLink = "{{nav.home}}"> <span></span>Get App </a></li>
-      <li><a id="shop" href = "https://nobaworld.threadless.com/mens/t-shirt/heavyweight" > <span></span>Shop </a></li>
+      <li><a id="home" routerLink = "/for-business"> <span></span>Home </a></li>
+      <!-- <li><a id="noba" routerLink = "{{nav.what_is_noba}}"> <span></span>What is Noba </a></li> -->
+      <li><a id="noba" routerLink = "/for-people/app"> <span></span>Get App </a></li>
+      <!-- <li><a id="shop" href = "https://nobaworld.threadless.com/mens/t-shirt/heavyweight" > <span></span>Shop </a></li> -->
       <li><a id="connect" routerLink = "/for-people/connect" > <span></span>Connect </a></li>
-      <li><a id="academy" routerLink = "{{nav.register_interest}}"> <span></span>Academy </a></li>
-      <li><a id="contact" routerLink = "/" [fragment]="'partnertarget'"> <span></span> Contact </a></li>
+      <li><a id="academy" href="https://ondo.nobaworld.io/login"> <span></span>Academy </a></li>
     </div>
   </ul>
 <div class="header">

@@ -25,8 +25,10 @@ export class WhatIsNobaComponent implements OnInit {
   nav = {
     home : '/',
     what_is_noba: '../what-is-noba',
-    register_interest:'../register-interest',
-    business:'../../for-business'
+       register_interest:'../register-interest',
+       business:'../../for-business',
+       app_route:'../app'
+
   }
 
   constructor() { }

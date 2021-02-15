@@ -4,8 +4,10 @@ export class Register{
     LastName:string;
     email:string;
     PhoneNumber:Number;
-    Interest_People:Boolean;
-    Interest_Business:Boolean;
+    app:Boolean;
+    service:Boolean;
+    consulting:Boolean;
+    work_with_us:Boolean;
     Help:String;
     Country:String;
 }

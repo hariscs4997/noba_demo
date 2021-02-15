@@ -18,8 +18,7 @@ import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
-    AppComponent,
-  ],
+    AppComponent  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
