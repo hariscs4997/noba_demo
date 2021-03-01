@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {path: "for-people" , loadChildren: () => import('./people/people.module').then(m => m.PeopleModule)},
-  // {path: "for-business" , loadChildren: () => import('./business/business.module').then(m => m.BusinessModule)},
+  {path: "for-business" , loadChildren: () => import('./business/business.module').then(m => m.BusinessModule)},
   {
     path: '',
     redirectTo: 'for-people',

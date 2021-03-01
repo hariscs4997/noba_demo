@@ -185,3 +185,16 @@ select{
 div{
     font-family: BeirutText-Regular;
 }
+.font-custom,select,textarea{
+    font-size: 20px  !important;
+}
+.btn-success.disabled, .btn-success:disabled,.btn-success,.btn-success.focus, .btn-success:focus,.btn-success:hover  
+   {
+    color: #fff;
+    background-color: #086262 !important;
+    border-color:#086262 !important;
+}
+.btn{
+    border-radius: 0 !important;
+}
+

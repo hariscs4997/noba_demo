@@ -3,7 +3,7 @@
   
 <div class="background">
     <div class="container">
-        <h2 class="mt-5">Register your Interest</h2>
+        <h2 class="mt-5">Get in Touch </h2>
         <div class="row">
             <form class="form-inline" [formGroup] = "registrationform" (ngSubmit)="onSubmit()">
                 <div class="col-lg-12">
@@ -35,42 +35,49 @@
                 <div class="col-lg-6">
                     <div class="form-group">
                         <div class="w-100 text-left mt-5 interest">Interest</div>
-                        <div class="w-100 mt-2 pl-4">
-                            <input class="form-check-input" type="checkbox" id="app"  formControlName="app" [(ngModel)]='registration.app'> Noba Mobile App Services
+                        <div class="w-100 mt-2 pl-4 font-custom">
+                            <input class="form-check-input" type="checkbox" id="app"  formControlName="app" [(ngModel)]='registration.app' > Noba Mobile App
                         </div>
-                        <div class="w-100 mt-2 pl-4">
-                            <input class="form-check-input" type="checkbox" id="service"  formControlName="service" [(ngModel)]='registration.service'> Noba Academy Services
+                        <div class="w-100 mt-2 pl-4 font-custom">
+                            <input class="form-check-input" type="checkbox" id="service"  formControlName="service" [(ngModel)]='registration.service' > Noba Academy 
                         </div>
-                        <div class="w-100 mt-2 pl-4">
-                            <input class="form-check-input" type="checkbox" id="consulting" formControlName="consulting" [(ngModel)]='registration.consulting'> Consulting Services
+                       
+                        <div class="w-100 mt-2 pl-4 font-custom">
+                            <input class="form-check-input" type="checkbox" id="shop"  formControlName="shop" [(ngModel)]='registration.shop' > Noba Shop 
                         </div>
-                        <div class="w-100 mt-2 pl-4">
-                            <input class="form-check-input" type="checkbox" id="work_with_us" formControlName="work_with_us" [(ngModel)]='registration.work_with_us'> Working with us
+                        <div class="w-100 mt-2 pl-4 font-custom">
+                            <input class="form-check-input" type="checkbox" id="connect" formControlName="connect" [(ngModel)]='registration.connect' > Noba Connect
+                        </div>
+                        <div class="w-100 mt-2 pl-4 font-custom">
+                            <input class="form-check-input" type="checkbox" id="consulting" formControlName="consulting" [(ngModel)]='registration.consulting' > Consulting
+                        </div>
+                       
+                        <div class="w-100 mt-2 pl-4 font-custom">
+                            <input class="form-check-input" type="checkbox" id="business"  formControlName="business" [(ngModel)]='registration.business' > Business Services
+                        </div>
+                        <div class="w-100 mt-2 pl-4 font-custom">
+                            <input class="form-check-input" type="checkbox" id="work_with_us" formControlName="work_with_us" [(ngModel)]='registration.work_with_us' > Working with us
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="form-group">
-                        <div class="w-100 text-left mt-5 interest">How can we help?</div>
+                        <div class="w-100 text-left  interest">How can we help?</div>
                         <textarea class="form-control mt-2" rows="2" id="comment" formControlName="help" required [(ngModel)]='registration.Help'></textarea>
                     </div>
-                </div>
-                
-                <div class="col-lg-12">
                     <div class="form-group">
-                        <label class="w-100 mt-5 heading interest" for="sel1">Country</label>
+                        <label class="w-100 heading interest mt-5" for="sel1">Country</label>
                         <select class="form-control mt-2 w-100 " id="sel1" formControlName="country" required [(ngModel)]='registration.Country'>
                         <option value="United Kingdom">United Kingdom</option>
-                        <option value="Africa">Africa</option>
                         <option value="London"> London</option>
-                        <option value="Turki">Turki</option>
+                        <option value="Turkey">Turkey</option>
                         </select>
                     </div>
                 </div>
-
+                
 
                 <div class="col-lg-12 text-center mt-5">
-                <button class="btn btn-success btn-lg" (click)="newRegister" [disabled] = "!registrationform.valid">Contact Us</button>
+                <button class="btn btn-success btn-lg font-weight-bold w-50" (click)="newRegister" [disabled] = "!registrationform.valid">Submit</button>
                 <br><br>  
             </div>
             </form>

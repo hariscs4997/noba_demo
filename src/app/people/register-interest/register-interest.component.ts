@@ -47,6 +47,9 @@ export class RegisterInterestComponent implements OnInit {
     Phone        : new FormControl('',[Validators.required]),
     app       : new FormControl(''),
     service       : new FormControl(''),
+    shop       : new FormControl(''),
+    connect       : new FormControl(''),
+    business       : new FormControl(''),
     consulting : new FormControl(''),
     work_with_us : new FormControl(''),
     help        : new FormControl('',[Validators.required]),
@@ -75,6 +78,15 @@ onSubmit(){
   }
   if((<HTMLInputElement>document.querySelector('#consulting')).checked==false){
     this.registration.consulting= false;
+  }
+  if((<HTMLInputElement>document.querySelector('#connect')).checked==false){
+    this.registration.connect= false;
+  }
+  if((<HTMLInputElement>document.querySelector('#business')).checked==false){
+    this.registration.business= false;
+  }
+  if((<HTMLInputElement>document.querySelector('#shop')).checked==false){
+    this.registration.shop= false;
   }
   if((<HTMLInputElement>document.querySelector('#work_with_us')).checked==false){
     this.registration.work_with_us= false;

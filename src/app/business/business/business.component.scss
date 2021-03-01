@@ -503,6 +503,7 @@
         transform: rotate(90deg);
         position: absolute;
         left: -80px;
+        font-size: 20px;
         bottom: 115px;
         cursor: pointer;
         z-index: 1;
@@ -714,7 +715,7 @@
     b {
         text-transform: uppercase;
         color: #ff7957;
-        
+        font-size:20px;
     }
     .carousel .carousel-control {
         width: 40px;
@@ -773,6 +774,19 @@
     position: relative;
     .icon{
         width: 200px;
+    }
+    .arrow{
+        font-family: BeirutText-Regular;
+        color: #ff7957;
+        transform: rotate(90deg);
+        position: absolute;
+        left: -70px;
+        top: -20px;
+        z-index: 1;
+        cursor: pointer;
+        img{
+            margin-right: 40px;
+        }
     }
 }
 
@@ -847,6 +861,19 @@
                     background-color: #cc583c;
                 }
             }
+        }
+    }
+    .arrow{
+        font-family: BeirutText-Regular;
+        color: #ffffff;
+        transform: rotate(90deg);
+        position: absolute;
+        left: -70px;
+        top: -20px;
+        z-index: 1;
+        cursor: pointer;
+        img{
+            margin-right: 40px;
         }
     }
 }
@@ -1897,3 +1924,6 @@
 
 
 
+.btn{
+    border-radius: 0 !important;
+}

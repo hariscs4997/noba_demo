@@ -6,6 +6,9 @@ export class Register{
     PhoneNumber:Number;
     app:Boolean;
     service:Boolean;
+    business:Boolean;
+    connect:Boolean;
+    shop:Boolean;
     consulting:Boolean;
     work_with_us:Boolean;
     Help:String;
